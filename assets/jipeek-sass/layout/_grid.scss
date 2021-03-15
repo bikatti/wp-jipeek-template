@@ -1,0 +1,187 @@
+/* ------------------------------------
+# Grid, Container y paddings
+-------------------------------------- */
+// Navegación y distribución de la página
+.-container {
+    width: 100%;
+    padding-right: $spaceSm;
+    padding-left: $spaceSm;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include mediaQueriesMinSm {
+        max-width: 540px;
+    }
+    
+    @include mediaQueriesMinMd {
+        max-width: 720px;
+    }
+    
+    @include mediaQueriesMinLg {
+        max-width: 960px;
+    }
+
+    @include mediaQueriesMinXl {
+        max-width: 1170px;
+    }
+}
+
+.-containerFluid {
+    width: 100%;
+    padding-right: $spaceSm;
+    padding-left: $spaceSm;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.-p0 {
+    padding: 0 !important;
+}
+
+.-p0-top {
+    padding-top: 0 !important;
+}
+
+.-p0-bottom {
+    padding-bottom: 0 !important;
+}
+
+.-p5 {
+    padding-bottom: 5px;
+}
+
+// Margin
+.-mAuto {
+    margin: auto;
+}
+.-mAutoRL {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.-mAutoLft {
+    margin-left: auto;
+}
+.-mAutoRight {
+    margin-right: auto;
+}
+.-mBgBottom {
+    margin-bottom: $spaceBg;
+}
+.-mZero {
+    margin: 0 !important;
+}
+
+// show & hide
+.-hide {
+    display: none;
+}
+.-show {
+    display: block !important;
+}
+
+// Position
+.-pRelative {
+    position: relative;
+}
+.-pAbsolute {
+    position: absolute;
+}
+.-sticky {
+    position: sticky;
+}
+/* .-fixed {
+    position: fixed;
+} */
+
+
+// overflow
+.-overHidden {
+    @include Overflow();
+}
+
+// Flexbox
+.-flexCenterCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Grid
+.-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$spaceSm;
+    margin-right: -$spaceSm;
+
+    .-col-1, .-col-2, .-col-3, .-col-4, .-col-5, .-col-6,
+    .-col-7, .-col-8, .-col-9, .-col-10, .-col-11, .-col-12,
+    .-col-md-6 {
+        width: 100%;
+        padding: 0 $spaceSm;
+    }
+
+    .-col-sm-6 {
+        width: 49.9999999998% !important;
+    }
+
+    @include mediaQueriesMinSm {
+        .-col-md-6 {
+            width: 49.9999999998% !important;
+        }
+    }
+
+
+    @include mediaQueriesMinLg {
+        .-col-1 {
+            width: 8.3333333333%;
+        }
+        .-col-2 {
+            width: 16.6666666666%;
+        }
+        .-col-3 {
+            width: 24.9999999999% !important;
+        }
+        .-col-4 {
+            width: 33.3333333332% !important;
+        }
+        .-col-5 {
+            width: 41.6666666665%;
+        }
+        .-col-6 {
+            width: 49.9999999998%;
+        }
+        .-col-7 {
+            width: 58.3333333331%;
+        }
+        .-col-8 {
+            width: 66.6666666664%;
+        }
+        .-col-9 {
+            width: 74.9999999997%;
+        }
+        .-col-10 {
+            width: 83.3333333333%;
+        }
+        .-col-11 {
+            width: 91.6666666663%;
+        }
+        .-col-12 {
+            width: 100%;
+        }
+        
+
+        
+    }
+    
+}
+
+
+.-backHalf {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(1, 1, 1, 0.4);
+}

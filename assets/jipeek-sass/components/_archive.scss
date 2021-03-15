@@ -1,0 +1,108 @@
+/* ------------------------------------
+ # Archive para post de cualquier Taxonomy
+ -------------------------------------- */
+
+.m-archive__header {
+    margin-top: $spaceMega;
+    margin-bottom: $spaceBg;
+    
+    h1 {
+        @include weight(6);
+        font-size: $fontRg;
+    }
+    
+    @include mediaQueriesMinMd {
+        margin: $spaceMd 0px $spaceBg 0px;
+
+        h1 {
+            font-size: $fontBigger;
+        }
+    }
+}
+
+.m-archive__articleBlock {
+    margin-bottom: 120px;
+}
+
+.m-biggerArticle {
+    position: relative;
+    width: 100%;
+    height: 100vw;
+    border-radius: $spaceXxs !important;
+    margin-bottom: $spaceMd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+    h3 {
+        @include weight(5);
+        color: $color-lightin;
+
+        font-size: $fontSm;
+        max-width: 492px;
+        padding: $spaceSm;
+        
+        position: relative;
+        z-index: 2;
+
+        @include lineClamp(3);
+        max-height: 135px;
+    }
+
+    @include mediaQueriesMinMd {
+        height: 553px;
+
+        h3 {
+            padding: 0;
+            padding-left: $spaceSuperXl;
+            margin-bottom: $spaceRg;
+        }
+    }
+}
+
+.m-biggerArticle__img {
+    border-radius: $spaceXxs;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+    transition: 0.3s;
+}
+
+.m-biggerArticle__cat {
+    @extend .m-single__cat;
+    color: $color-lightin;
+    position: relative;
+    z-index: 2;
+    padding-left: $spaceSm;
+    margin-bottom: $space0;
+    margin-top: $spaceSuperXl;
+
+    @include mediaQueriesMinMd {
+        margin-bottom: $spaceSm;
+        padding-left: $spaceSuperXl;
+    }
+}
+
+.m-biggerArticle__excerpt {
+    font-family: $font2;
+    color: $color-lightin;
+    font-size: $fontP;
+    position: relative;
+    z-index: 2;
+    max-height: 122px;
+    padding: $spaceSm;
+    padding-bottom: 0;
+    @include lineClamp(3);
+
+    @include mediaQueriesMinMd {
+        @include lineClamp(6);
+        padding: 0;
+        padding-left: $spaceSuperXl;
+        max-width: 492px;
+    }
+}

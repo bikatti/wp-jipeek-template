@@ -1,0 +1,76 @@
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: $color-lightgrey;
+
+    &.-frontPage {
+        background: $color-happy;
+    }
+
+    // Scroll bar
+    &::-webkit-scrollbar {
+        background: transparent;
+        width: 15px;
+        height: 15px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-darkgrey;
+        &:hover {
+            background-color: $color-dark;
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $color-grey;
+    }
+}
+
+dl, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+blockquote {
+    margin: 0;
+}
+
+
+/* Scrolling */
+
+::selection {
+    background-color: $color-secondary;
+}
+
+
+/* ------------------------------------
+ # Wordpress
+ -------------------------------------- */
+
+section {
+    position: relative;
+    z-index: 2;
+    background-color: $color-lightgrey;
+}

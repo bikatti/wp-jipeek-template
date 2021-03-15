@@ -1,0 +1,38 @@
+/*
+Theme Name: blog styling
+Author: Hacktzi team
+Author URI: https://wordpress.org/
+Description: Blog de Wordpress para competencia de Platzi. 
+Requires at least: 5.3
+Tested up to: 5.6
+Requires PHP: 5.6
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Hacktzi, blog
+*/
+
+// lib
+@import "lib/var";
+@import "lib/mixin";
+
+// layout
+@import "layout/bootstrap_reboot";
+@import "layout/site";
+@import "layout/grid";
+
+// base
+@import "base/typography";
+@import "base/links";
+@import "base/buttons";
+@import "base/icons";
+
+// components
+@import "components/header";
+@import "components/category-list";
+@import "components/last-view";
+@import "components/popular";
+@import "components/single";
+@import "components/archive";
+@import "components/modal";
+@import "components/footer";

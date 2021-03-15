@@ -1,0 +1,138 @@
+h1, h2, h3, h4, h5, h6, p, small, i, label, span, ol, li, ul, a, input, label, .-h1, .-h2, .-h3 {
+    color: $color-black;
+    line-height: 1.35;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include weight(5);
+}
+
+h1 {
+
+    font-size: $fontRg;
+    @include mediaQueriesMinMd {
+        font-size: $fontXl;
+    }
+}
+
+h2 {
+    font-size: $fontSm;
+    
+    @include mediaQueriesMinMd {
+        font-size: $fontMd;
+    }
+}
+
+h3 {
+    font-size: $fontXs;
+    line-height: 1.3;
+
+    @include mediaQueriesMinMd {
+        font-size: $fontSm;
+    }
+}
+
+h4 {
+    font-size: $fontSuperXs;
+    line-height: 1.3;
+
+    @include mediaQueriesMinMd {
+        font-size: $fontXs;
+    }
+}
+
+h5 {
+    font-size: $fontSuperXs;
+}
+
+h6 {
+    font-size: $fontXxs;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: $font2;
+    color: $color-dark;
+
+    @include mediaQueriesMinSm {
+        font-size: $fontP;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+// Styles
+.-uppercase {
+    text-transform: uppercase;
+}
+.-black {
+    @include weight(9);
+}
+.-extraBold {
+    @include weight(8);
+}
+.-bold {
+    @include weight(7);
+}
+.-semiBold {
+    @include weight(6);
+}
+.-medium {
+    @include weight(5);
+}
+.-regular {
+    @include weight(4);
+}
+.-light {
+    @include weight(3);
+}
+.-extraLight {
+    @include weight(2);
+}
+.-thin {
+    @include weight(1);
+}
+
+
+.-italic {
+    font-style: italic;
+}
+.-center {
+    text-align: center;
+}
+.-condensed {
+    letter-spacing: -1px;
+}
+
+// Color
+.-lightin {
+    color: $color-lightin;
+}
+
+// Line-clamp
+.-lineClampTitle {
+    @include lineClamp(2);
+}
+
+
+// Toggle
+.-toggleItem {
+    transition: 0.4s;
+    display: inline-block;
+    height: 33px;
+    border-radius: $spaceRg;
+    border: solid 1px $color-darkgrey;
+    padding: 0px $spaceSm;
+    line-height: 1.8;
+    margin-right: $spaceXs;
+    margin-bottom: $spaceXs;
+
+    &:hover {
+        color: $color-lightin;
+        border-color: $color-secondary;
+        background-color: $color-secondary;
+    }
+}

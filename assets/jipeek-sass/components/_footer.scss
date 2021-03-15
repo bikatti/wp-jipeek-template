@@ -1,0 +1,107 @@
+/* -------------------------------------
+ # Footer, Styles of footer and Up bar
+ --------------------------------------- */
+
+.o-upBar {
+    padding: $spaceXs;
+    background: $color-primary;
+    transition: background 0.35s cubic-bezier(0.215,0.61,0.355,1);
+
+    &:hover {
+        background: darken($color-primary, 6%);
+    }
+}
+
+.theBody footer.o-footer {
+    margin-top: $spaceBg;
+    margin-bottom: $spaceBg;
+}
+
+.m-footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: $space25;
+
+    @include mediaQueriesMd {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.m-footer__brand {
+    max-width: 200px;
+
+    img {
+        width: 100%;
+    }
+
+    @include mediaQueriesMd {
+        margin-bottom: $space25;
+    }
+}
+
+.m-footer__nav {
+    margin-bottom: $spaceRg;
+    display: flex;
+    
+    .menu-item {
+        position: relative;
+        padding: $spaceXs;
+        &::after {
+            content: ' ';
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            width: 2px;
+            height: 21px;
+            background-color: $color-primary;
+        }
+    }
+}
+
+.m-footer__menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.m-footer__button {
+    padding: 0;
+}
+
+.m-footer__button span, .-links {
+    padding: $spaceXs;
+    color: $color-primary;
+    position: relative;
+}
+
+.m-footer__firm {
+    border-top: $borderBottom;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    p {
+        padding-top: $spaceSm;
+        padding-bottom: $spaceSm;
+    }
+
+    &::after {
+        content: url('assets/img/icons/monlogo.png');
+        transform: scale(.38) translateX(-50%);
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 48%;
+        opacity: 0.7;
+    }
+
+    @include mediaQueriesMd {
+        p {
+            font-size: 12px;
+        }
+
+        &::after {
+            left: 43%;
+        }
+    }
+}

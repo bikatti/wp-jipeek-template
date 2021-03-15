@@ -1,0 +1,35 @@
+/* ------------------------------------
+ # Primer bloque, Nav de links de categorias
+ -------------------------------------- */
+
+.m-categoryList {
+    margin-top: 140px;
+    margin-bottom: $spaceMd;
+    display: none;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+
+        li {
+            @include weight(5);
+            @extend .-uppercase;
+            display: inline-block;
+            font-size: 13px;
+            margin-right: $spaceMd;
+            letter-spacing: 0.9px;
+            position: relative;
+            margin-bottom: $spaceRg;
+
+            a:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    @include mediaQueriesMinMd {
+        display: block;
+    }
+}

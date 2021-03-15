@@ -1,0 +1,16 @@
+/* ------------------------------------
+# Botón
+-------------------------------------- */
+
+.a-btn {
+    // font-size: $font-11;
+    color: $color-lightin;
+    // line-height: $font-11;
+    border-radius: 0;
+    transition: background-color .24s cubic-bezier(.215,.61,.355,1),color .24s cubic-bezier(.215,.61,.355,1);
+    cursor: pointer;
+    &:hover {
+        background: lighten($color-primary, 5%);
+        color: $color-lightin;
+    }
+}

@@ -1,0 +1,80 @@
+/* ------------------------------------
+ # Header, menú principal del landing page
+ -------------------------------------- */
+
+.o-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: $spaceRg $spaceSm;
+    background: $color-lightgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $friend;
+    transition: 0.3s;
+    
+    &.-headerFixed {
+        padding-top: $space0;
+        padding-bottom: $space0;
+        border-bottom: 1px solid $color-grey;
+    }
+
+    @include mediaQueriesMinSm {
+        padding: $spaceRg $spaceMd;
+    }
+}
+
+.m-header__brand {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    
+    img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    @include mediaQueriesMinSm {
+        img {
+            width: 100%;
+            max-width: 190px;
+        }
+    }
+}
+
+.m-header__nav {
+    display: flex;
+    .m-header__link {
+        display: none;
+    }
+
+    .m-header__menu {
+        display: none;
+    }
+
+    span, a {
+        margin-right: $spaceXs;
+        @include weight(5);
+        color: $color-black;
+        font-size: $fontP;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    @include mediaQueriesMinMd {
+        .m-header__link {
+            display: inline-block;
+        }
+
+        .m-header__menu {
+            display: flex;
+        }
+
+        span, a {
+            margin-right: $spaceBg;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+/* ------------------------------------
+ # Modals ❤🔥
+ -------------------------------------- */
+
+.-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $child;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+
+.m-modal {
+    position: relative;
+    width: auto;
+    margin: $spaceXxs;
+    pointer-events: none;
+    transition: transform 0.3s ease-out;
+
+    .-show & {
+        transform: translate(0, 0);
+    }
+
+    @include mediaQueriesMinSm {
+        max-width: 500px;
+        margin: $spaceMd auto;
+    }
+
+    @include mediaQueriesMinLg {
+        max-width: 800px;
+    }
+}
+
+.m-modal__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: $color-lightin;
+    background-clip: padding-box;
+    border: 1px solid rgba($color-black, 0.2);
+    border-radius: $space0;
+    outline: 0;
+}
+
+.m-modal__close {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: $guest;
+
+    span {
+        font-size: $fontBg;
+    }
+}
+
+.m-modal__body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: $spaceSm;
+
+    h4 {
+        font-size: $fontBg;
+        text-align: center;
+        margin-bottom: $spaceMd;
+    }
+}
+
+.m-modal__tax, .m-modal__category {
+    padding: $spaceSm;
+}
+
+.m-modal__category {
+    padding-top: 0;
+}
+
+.m-modal__category ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+    li {
+        flex-basis: 50%;
+        text-align: center;
+        padding: 7px 0;
+
+        a {
+            @include weight(5);
+            font-size: $fontSuperXs;
+        }
+    }
+}
+
+.-glassDark {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    z-index: calc(#{$guest} + #{$friend});
+    background-color: $color-black;
+    transition: 0.6s;
+
+    &.-show {
+        opacity: .5;
+    }
+}
