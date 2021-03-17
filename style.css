@@ -1240,7 +1240,7 @@ a:hover {
 /* ------------------------------------
  # Tercer bloque, Noticias Populares
  -------------------------------------- */
-.m-popularItem {
+.m-popularItem, .m-categoryItem {
   position: relative;
   padding: 38px 30px 30px 30px;
   min-height: 438px;
@@ -1250,7 +1250,7 @@ a:hover {
   border-radius: 7px;
   background-color: #fefefe;
 }
-.m-popularItem h3 {
+.m-popularItem h3, .m-categoryItem h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 28px;
@@ -1264,7 +1264,7 @@ a:hover {
   overflow: hidden;
   max-height: 136px;
 }
-.m-popularItem img {
+.m-popularItem img, .m-categoryItem img {
   transition: 0.4s;
   border-radius: 0px;
   position: absolute;
@@ -1275,7 +1275,7 @@ a:hover {
   object-fit: cover;
 }
 @media only screen and (min-width: 992px) {
-  .m-popularItem {
+  .m-popularItem, .m-categoryItem {
     min-height: 535px;
     margin-bottom: 0;
   }
@@ -1283,6 +1283,36 @@ a:hover {
 
 .m-popularItem__cat {
   color: #464547;
+}
+
+/* ------------------------------------
+ # Category Item for a post blog
+ -------------------------------------- */
+@media only screen and (min-width: 768px) {
+  .m-categoryItem {
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  .m-categoryItem header {
+    padding: 30px 25px;
+    padding-left: 420px;
+  }
+  .m-categoryItem h3 {
+    margin-bottom: 15px;
+  }
+  .m-categoryItem p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+  .m-categoryItem img {
+    max-width: 390px;
+    height: auto;
+  }
 }
 
 /* ------------------------------------
@@ -1502,15 +1532,13 @@ a:hover {
 .m-page {
   margin-top: 60px;
 }
-.m-page .-container {
-  max-width: 700px;
-}
 .m-page .m-single__img {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
   .m-page .m-single__img {
     height: 360px;
+    margin-top: 0;
   }
 }
 
@@ -1535,6 +1563,7 @@ a:hover {
 @media only screen and (min-width: 1200px) {
   .m-page__card {
     margin: -64px auto 0 0;
+    margin-left: 90px;
   }
 }
 

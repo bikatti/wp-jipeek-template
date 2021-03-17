@@ -1,0 +1,34 @@
+/* ------------------------------------
+ # Category Item for a post blog
+ -------------------------------------- */
+
+.m-categoryItem {
+    @extend .m-popularItem;
+    
+    @include mediaQueriesMinMd {
+        display: flex;
+        flex-direction: row;
+        min-height: 100px;
+        margin-bottom: $spaceBg;
+        padding: 0;
+        
+        header {
+            padding: $spaceMd $space25;
+            padding-left: 420px;
+        }
+
+        h3 {
+            margin-bottom: $spaceSm;
+        }
+
+        p {
+            @include lineClamp(3);
+        }
+
+        img {
+            // position: static;
+            max-width: 390px;
+            height: auto;
+        }
+    }
+}
