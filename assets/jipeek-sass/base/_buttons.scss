@@ -6,11 +6,18 @@
     // font-size: $font-11;
     color: $color-lightin;
     // line-height: $font-11;
-    border-radius: 0;
+    padding: 12px 28px;
+    border-radius: $space0;
+    background-color: $color-primary;
     transition: background-color .24s cubic-bezier(.215,.61,.355,1),color .24s cubic-bezier(.215,.61,.355,1);
     cursor: pointer;
     &:hover {
         background: lighten($color-primary, 5%);
         color: $color-lightin;
     }
+}
+
+.m-pagination {
+    display: flex;
+    justify-content: space-between;
 }

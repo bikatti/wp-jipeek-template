@@ -18,10 +18,6 @@
     align-items: baseline;
     margin-bottom: $space0;
 
-    .m-lastArticle__title {
-        font-size: $fontRg;
-    }
-
     a {
         @include weight(5);
         letter-spacing: 0.1px;
@@ -31,11 +27,11 @@
     }
 
     @include mediaQueriesMinMd {
-        margin-bottom: $spaceMd;
+        margin-bottom: $spaceSm;
 
-        .m-lastArticle__title {
-            font-size: $fontBigger;
-        }
+        // .m-lastArticle__title {
+        //     font-size: $fontBigger;
+        // }
 
         a {
             font-size: $fontXs;
@@ -168,6 +164,7 @@
     }
 
     .m-smallArticle__excerpt {
+        @include lineClamp(5);
         font-family: $font2;
         font-size: $fontP;
         text-transform: unset;

@@ -6,19 +6,18 @@
  * @subpackage Monmedios
  */
 
-$args = array(
+$argumentos = array(
     'post_type' => 'post',
     'posts_per_page' => 4,
-    'order' => 'DESC',
-    'orderby' => 'date'
+    'orderby' => 'rand'
 );
 
-$the_query = new WP_Query($args);
+$the_query = new WP_Query($argumentos);
 $iter = 0;
 ?>
 
 
-<section class="m-bottomArticle">
+<?php echo '<section class="m-bottomArticle '. $args['className'] .'">'; ?>
     <div class="-container">
         <div class="-row">
             <?php

@@ -12,16 +12,16 @@
     }
     
     @include mediaQueriesMinMd {
-        margin: $spaceMd 0px $spaceBg 0px;
+        margin: $spaceMd 0px $spaceMd 0px;
 
         h1 {
-            font-size: $fontBigger;
+            font-size: $fontXl;
         }
     }
 }
 
 .m-archive__articleBlock {
-    margin-bottom: 120px;
+    margin-bottom: $spaceSuperXl;
 }
 
 .m-biggerArticle {
@@ -52,7 +52,7 @@
     }
 
     @include mediaQueriesMinMd {
-        height: 553px;
+        height: 500px;
 
         h3 {
             padding: 0;
@@ -100,7 +100,7 @@
     @include lineClamp(3);
 
     @include mediaQueriesMinMd {
-        @include lineClamp(6);
+        @include lineClamp(5);
         padding: 0;
         padding-left: $spaceSuperXl;
         max-width: 492px;

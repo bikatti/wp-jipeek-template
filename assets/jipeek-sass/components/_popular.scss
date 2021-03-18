@@ -5,9 +5,8 @@
 .m-popularItem {
     position: relative;
     padding: 38px $spaceMd $spaceMd $spaceMd;
-    min-height: 438px;
     margin-bottom: $spaceMd;
-    min-height: 535px;
+    min-height: 500px;
     overflow: hidden;
     border-radius: $spaceXxs;
     background-color: $color-lightin;
@@ -37,7 +36,7 @@
     }
 
     @include mediaQueriesMinLg {
-        min-height: 535px;
+        min-height: 425px;
         margin-bottom: 0;
     }
 }

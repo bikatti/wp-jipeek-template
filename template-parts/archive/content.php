@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="-col-12">
+<div class="-col-12 -alwaysFirst">
     <a href="<?php echo esc_url( the_permalink( ) ); ?>">
         <article class="m-biggerArticle">
             <div class="-backHalf"></div><!-- .-backHalf -->

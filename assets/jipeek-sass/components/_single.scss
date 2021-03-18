@@ -4,6 +4,7 @@
 
 .m-single {
     margin-top: 100px;
+    margin-bottom: $spaceBg;
 
     p {
         margin-bottom: $spaceSm;
@@ -11,10 +12,6 @@
 
     .-col-12 {
         padding: 0 $spaceRg;
-    }
-
-    @include mediaQueriesMinLg {
-        margin-top: 200px;
     }
 }
 

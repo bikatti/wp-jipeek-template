@@ -2,8 +2,29 @@
  # Category Item for a post blog
  -------------------------------------- */
 
+.m-category {
+    margin-bottom: $spaceMd;
+    
+    @include mediaQueriesMinMd {
+        margin-bottom: $spaceBg;
+    }
+}
+
+.m-category__title {
+    margin-bottom: $spaceXs;
+}
+
 .m-categoryItem {
     @extend .m-popularItem;
+    transition: box-shadow 0.4s;
+    
+    p {
+        @include lineClamp(3);
+    }
+
+    a:hover & {
+        box-shadow: 0 12px 14px rgba($color-black, .1);
+    }
     
     @include mediaQueriesMinMd {
         display: flex;
@@ -21,9 +42,6 @@
             margin-bottom: $spaceSm;
         }
 
-        p {
-            @include lineClamp(3);
-        }
 
         img {
             // position: static;

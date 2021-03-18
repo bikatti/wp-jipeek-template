@@ -100,6 +100,17 @@
 }
 
 // Flexbox
+.-flex {
+    display: flex;
+}
+.-flexColumn {
+    flex-direction: column;
+}
+
+.-alwaysFirst {
+    order: -1;
+}
+
 .-flexCenterCenter {
     display: flex;
     align-items: center;
