@@ -1070,7 +1070,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 .m-lastArticle__header a {
   font-family: "Roboto", sans-serif;
@@ -1080,9 +1080,17 @@ a:hover {
   position: relative;
   top: 2px;
 }
+.m-lastArticle__header .m-lastArticle__title {
+  font-size: 24px;
+  max-width: 445px;
+}
 @media only screen and (min-width: 768px) {
   .m-lastArticle__header {
     margin-bottom: 15px;
+  }
+  .m-lastArticle__header .m-lastArticle__title {
+    font-size: 35px;
+    max-width: 650px;
   }
   .m-lastArticle__header a {
     font-size: 24px;

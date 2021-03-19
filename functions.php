@@ -36,7 +36,7 @@ add_filter( 'pre_get_posts', 'noSticky' );
  * Styles CSS, Fonts and others things
  */
 function assets() {
-    $ver = '1.3.9';
+    $ver = '1.3.14';
     wp_register_style( 'rubik', 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap', '', $ver , 'all' );
     wp_register_style( 'Frank Ruhl Libre', 'https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap', '', $ver, 'all' );
 
@@ -158,6 +158,16 @@ function the_category_single() {
         $closeCat = 0;
         if(!$category->parent && $closeCat == 0) { 
             echo $category->cat_name;
+            $closeCat++;
+        }
+    }
+}
+
+function the_category_on_single( ) {
+	foreach((get_the_category()) as $category) {
+        $closeCat = 0;
+        if(!$category->parent && $closeCat == 0) { 
+            echo '<a href="' . get_category_link( $category ) . '" class="m-single__cat" >' . $category->cat_name . '</a>';
             $closeCat++;
         }
     }

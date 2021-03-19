@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: $space0;
+    margin-bottom: $spaceRg;
 
     a {
         @include weight(5);
@@ -26,12 +26,18 @@
         top: 2px;
     }
 
+    .m-lastArticle__title {
+        font-size: $fontXs;
+        max-width: 445px;
+    }
+
     @include mediaQueriesMinMd {
         margin-bottom: $spaceSm;
 
-        // .m-lastArticle__title {
-        //     font-size: $fontBigger;
-        // }
+        .m-lastArticle__title {
+            font-size: $fontRg;
+            max-width: 650px;
+        }
 
         a {
             font-size: $fontXs;

@@ -11,7 +11,7 @@
 
 <header class="-row">
     <div class="-col-12">
-        <p class="m-single__cat"><?php echo esc_html( the_category_single() ); ?></p>
+        <p><?php echo esc_html( the_category_on_single() ); ?></p>
     </div>
     <div class="-col-12">
         <h1 class="m-single__title"><?php the_title( );?></h1>
