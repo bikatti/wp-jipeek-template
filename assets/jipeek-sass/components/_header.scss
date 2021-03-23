@@ -92,6 +92,16 @@
     }
 }
 
+.m-header__important {
+    @include mediaQueriesMinMd {
+        margin-right: 0 !important;
+    }
+}
+
+.m-header__link {
+    cursor: pointer;
+}
+
 .m-header__burger {
     margin-left: $spaceXs;
     margin-right: 0 !important;

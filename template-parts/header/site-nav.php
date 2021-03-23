@@ -18,7 +18,7 @@
         }
     ?>
     <span class="m-header__important" id="categoryModal">Categoría</span><!-- .m-header__link -->
-    <span class="m-header__link -mZero" id="tagsModal">Etiquetas</span><!-- .m-header__link -->
+    
     <span class="m-header__burger" id="burgerIcon">
         <?php get_template_part( 'template-parts/header/icon-burger' );?>
     </span><!-- .m-header__burger -->
