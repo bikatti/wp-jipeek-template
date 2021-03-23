@@ -6,7 +6,7 @@
     position: relative;
     padding: 38px $spaceMd $spaceMd $spaceMd;
     margin-bottom: $spaceMd;
-    min-height: 500px;
+    min-height: 425px;
     overflow: hidden;
     border-radius: $spaceXxs;
     background-color: $color-lightin;
@@ -36,7 +36,6 @@
     }
 
     @include mediaQueriesMinLg {
-        min-height: 425px;
         margin-bottom: 0;
     }
 }

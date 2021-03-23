@@ -10,8 +10,8 @@
 
 <div class="-row">
     <div class="-col-12">
-        <div class="m-lastArticle__header">
-            <h2 class="m-lastArticle__title">Popular</h2><!-- .m-lastArticle__title -->
-        </div><!-- .m-lastArticle__header -->
+        <div class="m-category__header">
+            <h2 class="m-category__title">Más vistos</h2><!-- .m-category__title -->
+        </div><!-- .m-category__header -->
     </div>
 </div>

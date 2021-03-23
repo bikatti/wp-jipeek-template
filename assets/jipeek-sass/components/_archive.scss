@@ -36,6 +36,16 @@
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 
+    &.-viewLastest {
+        max-height: 325px;
+
+        h3 {
+            @include lineClamp(2);
+            max-height: 100px;
+            padding: $spaceRg;
+        }
+    }
+
     h3 {
         @include weight(5);
         color: $color-lightin;
@@ -54,10 +64,30 @@
     @include mediaQueriesMinMd {
         height: 500px;
 
+        &.-viewLastest {
+            height: 250px;
+
+            h3 {
+                max-width: 600px;
+                padding: 0;
+                padding-left: $spaceSuperXl;
+            }
+        }
+
         h3 {
             padding: 0;
             padding-left: $spaceSuperXl;
             margin-bottom: $spaceRg;
+        }
+    }
+
+    @include mediaQueriesMinLg {
+        &.-viewLastest {
+            height: 213px;
+
+            h3 {
+                max-width: 750px;
+            }
         }
     }
 }
@@ -82,9 +112,20 @@
     margin-bottom: $space0;
     margin-top: $spaceSuperXl;
 
+    .-viewLastest & {
+        padding-left: $spaceRg;
+    }
+
+
     @include mediaQueriesMinMd {
         margin-bottom: $spaceSm;
         padding-left: $spaceSuperXl;
+
+        .-viewLastest & {
+            margin-top: $space25;
+            padding: 0;
+            padding-left: $spaceSuperXl;
+        }
     }
 }
 
@@ -99,10 +140,28 @@
     padding-bottom: 0;
     @include lineClamp(3);
 
+    .-viewLastest & {
+        padding: $spaceRg;
+    }
+
     @include mediaQueriesMinMd {
         @include lineClamp(5);
         padding: 0;
         padding-left: $spaceSuperXl;
         max-width: 492px;
+
+        .-viewLastest & {
+            @include lineClamp(3);
+            max-width: 600px;
+            padding: 0;
+            padding-left: $spaceSuperXl;
+        }
+    }
+
+    @include mediaQueriesMinLg {
+        .-viewLastest & {
+            max-width: 730px;
+            padding-right: $spaceSm;
+        }
     }
 }

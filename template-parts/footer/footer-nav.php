@@ -17,5 +17,5 @@
             ]);
         }
     ?>
-    <!-- <a href="#" class="m-footer__button"><span class="-medium">!</span></a> -->
+    <a href="#" class="m-footer__button"><span class="-medium">Subir </span></a>
 </nav>

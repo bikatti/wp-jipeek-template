@@ -17,6 +17,9 @@
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: $spaceRg;
+    padding: 53px $spaceSm;
+    border-radius: $spaceXxs;
+    position: relative;
 
     a {
         @include weight(5);
@@ -26,18 +29,23 @@
         top: 2px;
     }
 
+    .-backHalf {
+        border-radius: $spaceXxs;
+    }
+
     .m-lastArticle__title {
-        font-size: $fontXs;
-        max-width: 445px;
+        font-size: $fontSuperXs;
+        position: relative;
+        z-index: $friend;
+        text-align: center;
+        color: $color-lightin;
     }
 
     
     @include mediaQueriesMinMd {
-        margin-bottom: $spaceSm;
 
         .m-lastArticle__title {
             font-size: $fontRg;
-            max-width: 650px;
         }
 
         a {
@@ -48,7 +56,7 @@
 }
 
 .m-bigArticle {
-    padding: $spaceMd;
+    padding: $spaceRg;
     position: relative;
     margin-bottom: $spaceMd;
     border-radius: $spaceXxs;
@@ -95,8 +103,8 @@
 
 .m-bigArticle__header {
     position: absolute;
-    left: 35px;
-    top: 45px;
+    left: 20px;
+    top: 35px;
     padding-right: $spaceSuperXl;
 
     h3 {
@@ -126,7 +134,19 @@
         max-height: 117px;
     }
 
+    @include mediaQueriesXs {
+        padding-right: $spaceSm;
+    }
+    
+    @include mediaQueriesXxs {
+        .m-bigArticle__excerpt {
+            @include lineClamp(2);
+        }
+    }
+
     @include mediaQueriesMinMd {
+        left: 35px;
+        top: 45px;
         padding-right: 180px
     }
     

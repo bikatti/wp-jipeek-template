@@ -16,6 +16,7 @@
 
 .m-categoryItem {
     @extend .m-popularItem;
+    min-height: 500px;
     transition: box-shadow 0.4s;
     
     p {
@@ -34,7 +35,7 @@
         padding: 0;
         
         header {
-            padding: $spaceMd $space25;
+            padding: $spaceXl $space25;
             padding-left: 420px;
         }
 

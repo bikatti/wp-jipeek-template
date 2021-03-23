@@ -43,6 +43,7 @@
 .m-footer__nav {
     margin-bottom: $spaceRg;
     display: flex;
+    align-items: center;
     
     .menu-item {
         position: relative;
@@ -54,7 +55,7 @@
             right: 0;
             width: 2px;
             height: 21px;
-            background-color: $color-primary;
+            background-color: $color-happy;
         }
     }
 }
@@ -70,7 +71,6 @@
 
 .m-footer__button span, .-links {
     padding: $spaceXs;
-    color: $color-primary;
     position: relative;
 }
 

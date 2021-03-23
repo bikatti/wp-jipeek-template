@@ -15,9 +15,8 @@
 
         li {
             @include weight(5);
-            @extend .-uppercase;
             display: inline-block;
-            font-size: 13px;
+            font-size: $fontP;
             margin-right: $spaceMd;
             letter-spacing: 0.9px;
             position: relative;

@@ -17,7 +17,7 @@
                 <h4>Categorías</h4>
                 <div class="m-modal__category">
                     <ul>
-                        <li><a href="<?php echo esc_url( home_url( 'all-posts' ) ); ?>">Todos</a></li>
+                        <!-- <li><a href="<?php echo esc_url( home_url( 'all-posts' ) ); ?>">Todos</a></li> -->
                         <?php 
                             wp_list_categories( array(
                                 'title_li' => ''

@@ -13,5 +13,7 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 
 
 <div class="m-footer__brand">
-    <img src="<?php esc_attr_e( $image[0] ); ?>" class="m-header__logo" alt="logotipo de <?php esc_attr_e( get_bloginfo('name') ); ?>">
-</div>
+    <a href="<?php echo esc_url(home_url( )); ?>">
+        <img src="<?php esc_attr_e( $image[0] ); ?>" class="m-header__logo" alt="logotipo de <?php esc_attr_e( get_bloginfo('name') ); ?>"><!-- .m-header__logo -->
+    </a>
+</div><!-- .m-footer__brand -->

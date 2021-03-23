@@ -12,6 +12,7 @@ $blog_info    = get_bloginfo( 'name' );
 <div class="-row">
     <div class="-col-12">
         <div class="m-lastArticle__header">
+            <div class="-backHalf"></div>
             <h1 class="m-lastArticle__title">
                 <?php echo ($args['view_title'] == true) ? $args['view_title'] : esc_html( $blog_info ); ?>
             </h1><!-- .m-lastArticle__title -->

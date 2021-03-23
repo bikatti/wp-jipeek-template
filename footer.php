@@ -8,8 +8,9 @@
  * @subpackage Monmedios
  */
 ?>
-            </main><!-- #headerSticky -->
+            </main>
         </div><!-- #content -->
+        <?php get_template_part( 'template-parts/modals/modal-burger' );?>
         <?php get_template_part( 'template-parts/modals/modal-tags' );?>
         <?php get_template_part( 'template-parts/modals/modal-categories' );?>
 
