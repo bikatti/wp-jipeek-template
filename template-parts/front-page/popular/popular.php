@@ -9,7 +9,7 @@
 
 <section class="m-popular">
     <div class="-container">
-        <?php get_template_part( 'template-parts/front-page/popular/header' ); ?>
+        <?php get_template_part( 'template-parts/front-page/popular/header', null, $args ); ?>
         <?php get_template_part( 'template-parts/front-page/popular/posts' ); ?>
     </div>
 </section>

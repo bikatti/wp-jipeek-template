@@ -38,6 +38,7 @@
 
     &.-viewLastest {
         max-height: 325px;
+        margin-bottom: $spaceSuperXl;
 
         h3 {
             @include lineClamp(2);
@@ -83,7 +84,7 @@
 
     @include mediaQueriesMinLg {
         &.-viewLastest {
-            height: 213px;
+            height: 250px;
 
             h3 {
                 max-width: 750px;

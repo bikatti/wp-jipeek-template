@@ -6,8 +6,17 @@
     padding-top: $spaceMega;
     margin-bottom: $spaceSuperXl;
 
+    .m-lastArticle__title {
+        font-size: $fontSuperXs;
+        margin-bottom: $spaceXs;
+    }
+
     @include mediaQueriesMinMd {
         padding-top: 0;
+
+        .m-lastArticle__title {
+            font-size: $fontRg;
+        }
     }
 }
 
@@ -33,21 +42,8 @@
         border-radius: $spaceXxs;
     }
 
-    .m-lastArticle__title {
-        font-size: $fontSuperXs;
-        position: relative;
-        z-index: $friend;
-        text-align: center;
-        color: $color-lightin;
-    }
-
     
     @include mediaQueriesMinMd {
-
-        .m-lastArticle__title {
-            font-size: $fontRg;
-        }
-
         a {
             font-size: $fontXs;
             letter-spacing: 0.3px;

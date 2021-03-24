@@ -1090,9 +1090,16 @@ a:hover {
   padding-top: 90px;
   margin-bottom: 60px;
 }
+.m-lastArticle .m-lastArticle__title {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
 @media only screen and (min-width: 768px) {
   .m-lastArticle {
     padding-top: 0;
+  }
+  .m-lastArticle .m-lastArticle__title {
+    font-size: 35px;
   }
 }
 
@@ -1117,17 +1124,7 @@ a:hover {
 .m-lastArticle__header .-backHalf {
   border-radius: 7px;
 }
-.m-lastArticle__header .m-lastArticle__title {
-  font-size: 19px;
-  position: relative;
-  z-index: 50;
-  text-align: center;
-  color: #fefefe;
-}
 @media only screen and (min-width: 768px) {
-  .m-lastArticle__header .m-lastArticle__title {
-    font-size: 35px;
-  }
   .m-lastArticle__header a {
     font-size: 24px;
     letter-spacing: 0.3px;
@@ -1639,7 +1636,7 @@ a:hover .m-categoryItem {
 }
 @media only screen and (min-width: 768px) {
   .m-page .m-single__img {
-    height: 360px;
+    height: 425px;
     margin-top: 0;
   }
 }
@@ -1721,6 +1718,7 @@ a:hover .m-categoryItem {
 }
 .m-biggerArticle.-viewLastest {
   max-height: 325px;
+  margin-bottom: 60px;
 }
 .m-biggerArticle.-viewLastest h3 {
   display: -webkit-box;
@@ -1765,7 +1763,7 @@ a:hover .m-categoryItem {
 }
 @media only screen and (min-width: 992px) {
   .m-biggerArticle.-viewLastest {
-    height: 213px;
+    height: 250px;
   }
   .m-biggerArticle.-viewLastest h3 {
     max-width: 750px;
