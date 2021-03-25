@@ -1,0 +1,33 @@
+/* ------------------------------------
+ # Title of the site
+ -------------------------------------- */
+
+.m-titleSite {
+    padding-top: $spaceMega;
+    margin-bottom: $space0;
+
+    .-col-12 {
+        display: flex;
+        align-items: center;
+    }
+
+    @include mediaQueriesMd {
+        svg {
+            height: 35px;
+            width: 35px;
+        }
+    }
+
+    @include mediaQueriesMinMd {
+        padding-top: 0;
+        margin-bottom: $spaceXxs;
+    }
+}
+
+.m-titleSite__title {
+    padding-left: $spaceXs;
+
+    @include mediaQueriesMinMd {
+        padding-left: $spaceSm;
+    }
+}

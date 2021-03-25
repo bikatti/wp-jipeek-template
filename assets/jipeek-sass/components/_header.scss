@@ -54,6 +54,7 @@
 
 .m-header__nav {
     display: flex;
+    align-items: center;
 
     .m-header__link {
         display: none;
@@ -63,7 +64,7 @@
         display: none;
     }
 
-    span, a {
+    span, a, button {
         margin-right: $spaceXs;
         @include weight(5);
         color: $color-black;
@@ -79,8 +80,6 @@
             display: inline-block;
         }
 
-        
-
         .m-header__menu {
             display: flex;
         }
@@ -92,9 +91,31 @@
     }
 }
 
-.m-header__important {
+.m-header__important, .wp-block-button a.wp-block-button__link {
+    padding: $space0 $spaceSm;
+    border: 1px solid $color-black;
+    border-radius: $spaceRg;
+    transition: all .15s ease-in;
+
+    .m-header__nav & {
+        padding: 3px 12px;
+        font-size: $fontXxs;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-lightin;
+        border-color: $color-primary;
+        box-shadow: 0 1px 8px rgba($color-primary, .5);
+    }
+
     @include mediaQueriesMinMd {
         margin-right: 0 !important;
+
+        .m-header__nav & {
+            padding: $space0 $spaceSm;
+            font-size: $fontP;
+        }
     }
 }
 

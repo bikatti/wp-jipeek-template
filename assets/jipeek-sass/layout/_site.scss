@@ -11,10 +11,6 @@ body {
     overflow-x: hidden;
     background: $color-lightgrey;
 
-    &.-frontPage {
-        background: $color-happy;
-    }
-
     // Scroll bar
     &::-webkit-scrollbar {
         background: transparent;
@@ -61,7 +57,7 @@ blockquote {
 /* Scrolling */
 
 ::selection {
-    background-color: $color-secondary;
+    background-color: rgba($color-secondary, .5);
 }
 
 

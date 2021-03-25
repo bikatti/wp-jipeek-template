@@ -32,29 +32,3 @@ a {
     @include weight(6);
     color: $color-primary;
 }
-
-// .menu-item a {
-//     position: relative;
-
-//     &:hover:after {
-//         opacity: 1;
-//         transform: scaleX(1);
-//     }
-    
-//     &:after {
-//         content: "";
-//         width: 100%;
-//         height: 2px;
-//         background-color: $color-lightin;
-//         display: block;
-//         position: absolute;
-//         bottom: -6px;
-//         transition: 0.15s ease-in;
-//         opacity: 0;
-//         transform: scaleX(0);
-//     }
-
-//     .-headerFixed &:after {
-//         background-color: $color-primary;
-//     }
-// }

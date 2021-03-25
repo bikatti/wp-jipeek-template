@@ -13,6 +13,10 @@
     .-col-12 {
         padding: 0 $spaceRg;
     }
+
+    @include mediaQueriesMinMd {
+        margin-top: 0;
+    }
 }
 
 .m-single__cat {
@@ -46,6 +50,7 @@
 
     @include mediaQueriesMinMd {
         font-size: $fontXs;
+        margin-bottom: $spaceXl;
     }
 }
 
@@ -74,7 +79,6 @@
 
     @include mediaQueriesMinMd {
         height: 400px;
-        margin-bottom: 120px;
     }
 
     @include mediaQueriesMinLg {

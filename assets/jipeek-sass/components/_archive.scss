@@ -66,7 +66,7 @@
         height: 500px;
 
         &.-viewLastest {
-            height: 250px;
+            height: 325px;
 
             h3 {
                 max-width: 600px;
@@ -84,8 +84,6 @@
 
     @include mediaQueriesMinLg {
         &.-viewLastest {
-            height: 250px;
-
             h3 {
                 max-width: 750px;
             }
@@ -123,7 +121,7 @@
         padding-left: $spaceSuperXl;
 
         .-viewLastest & {
-            margin-top: $space25;
+            margin-top: $spaceXl;
             padding: 0;
             padding-left: $spaceSuperXl;
         }

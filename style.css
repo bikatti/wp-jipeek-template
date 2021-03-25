@@ -468,9 +468,6 @@ body {
   overflow-x: hidden;
   background: #f3f5fa;
 }
-body.-frontPage {
-  background: #68b0ab;
-}
 body::-webkit-scrollbar {
   background: transparent;
   width: 15px;
@@ -510,7 +507,7 @@ blockquote {
 
 /* Scrolling */
 ::selection {
-  background-color: #C25FFF;
+  background-color: rgba(243, 85, 136, 0.5);
 }
 
 /* ------------------------------------
@@ -713,7 +710,7 @@ section {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: rgba(1, 1, 1, 0.4);
+  background: rgba(1, 1, 1, 0.3);
 }
 
 h1, h2, h3, h4, h5, h6, p, small, i, label, span, ol, li, ul, a, input, label, .-h1, .-h2, .-h3 {
@@ -873,8 +870,8 @@ li {
 }
 .-toggleItem:hover {
   color: #fefefe;
-  border-color: #C25FFF;
-  background-color: #C25FFF;
+  border-color: #f35588;
+  background-color: #f35588;
 }
 
 a {
@@ -884,11 +881,11 @@ a {
 a:hover {
   text-decoration: none;
   transition: color 0.24s cubic-bezier(0.215, 0.61, 0.355, 1);
-  color: #246BFD;
+  color: #438a5e;
 }
 
 .-linkHeader {
-  color: #246BFD;
+  color: #438a5e;
   padding: 0 20px;
 }
 .-linkHeader.-onTop {
@@ -898,13 +895,13 @@ a:hover {
 }
 
 .-menuOut:hover, .-menuOut:focus {
-  color: #246BFD;
+  color: #438a5e;
 }
 
 .-monlogo {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  color: #246BFD;
+  color: #438a5e;
 }
 
 /* ------------------------------------
@@ -914,12 +911,12 @@ a:hover {
   color: #fefefe;
   padding: 12px 28px;
   border-radius: 5px;
-  background-color: #246BFD;
+  background-color: #438a5e;
   transition: background-color 0.24s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.24s cubic-bezier(0.215, 0.61, 0.355, 1);
   cursor: pointer;
 }
 .a-btn:hover {
-  background: #3d7cfd;
+  background: #4b9b6a;
   color: #fefefe;
 }
 
@@ -998,6 +995,7 @@ a:hover {
 
 .m-header__nav {
   display: flex;
+  align-items: center;
 }
 .m-header__nav .m-header__link {
   display: none;
@@ -1005,7 +1003,7 @@ a:hover {
 .m-header__nav .m-header__menu {
   display: none;
 }
-.m-header__nav span, .m-header__nav a {
+.m-header__nav span, .m-header__nav a, .m-header__nav button {
   margin-right: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -1030,9 +1028,29 @@ a:hover {
   }
 }
 
+.m-header__important, .wp-block-button a.wp-block-button__link {
+  padding: 5px 15px;
+  border: 1px solid #464547;
+  border-radius: 20px;
+  transition: all 0.15s ease-in;
+}
+.m-header__nav .m-header__important, .m-header__nav .wp-block-button a.wp-block-button__link {
+  padding: 3px 12px;
+  font-size: 14px;
+}
+.m-header__important:hover, .wp-block-button a.wp-block-button__link:hover {
+  background-color: #438a5e;
+  color: #fefefe;
+  border-color: #438a5e;
+  box-shadow: 0 1px 8px rgba(67, 138, 94, 0.5);
+}
 @media only screen and (min-width: 768px) {
-  .m-header__important {
+  .m-header__important, .wp-block-button a.wp-block-button__link {
     margin-right: 0 !important;
+  }
+  .m-header__nav .m-header__important, .m-header__nav .wp-block-button a.wp-block-button__link {
+    padding: 5px 15px;
+    font-size: 16px;
   }
 }
 
@@ -1075,7 +1093,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .m-categoryList ul li a:hover {
-  color: #246BFD;
+  color: #438a5e;
 }
 @media only screen and (min-width: 768px) {
   .m-categoryList {
@@ -1084,22 +1102,51 @@ a:hover {
 }
 
 /* ------------------------------------
+ # Title of the site
+ -------------------------------------- */
+.m-titleSite {
+  padding-top: 90px;
+  margin-bottom: 5px;
+}
+.m-titleSite .-col-12 {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .m-titleSite svg {
+    height: 35px;
+    width: 35px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .m-titleSite {
+    padding-top: 0;
+    margin-bottom: 7px;
+  }
+}
+
+.m-titleSite__title {
+  padding-left: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .m-titleSite__title {
+    padding-left: 15px;
+  }
+}
+
+/* ------------------------------------
  # Segundo bloque, Últimas noticias
  -------------------------------------- */
 .m-lastArticle {
-  padding-top: 90px;
   margin-bottom: 60px;
 }
 .m-lastArticle .m-lastArticle__title {
-  font-size: 19px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 @media only screen and (min-width: 768px) {
-  .m-lastArticle {
-    padding-top: 0;
-  }
   .m-lastArticle .m-lastArticle__title {
-    font-size: 35px;
+    font-size: 38px;
   }
 }
 
@@ -1419,12 +1466,17 @@ a:hover .m-categoryItem {
 .m-single .-col-12 {
   padding: 0 20px;
 }
+@media only screen and (min-width: 768px) {
+  .m-single {
+    margin-top: 0;
+  }
+}
 
 .m-single__cat, .m-biggerArticle__cat {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 11px;
-  color: #246BFD;
+  color: #438a5e;
   letter-spacing: 2.2px;
   line-height: 1.38;
 }
@@ -1455,6 +1507,7 @@ a:hover .m-categoryItem {
 @media only screen and (min-width: 768px) {
   .m-single__excerpt {
     font-size: 24px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1485,7 +1538,6 @@ a:hover .m-categoryItem {
 @media only screen and (min-width: 768px) {
   .m-single__img {
     height: 400px;
-    margin-bottom: 120px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1511,7 +1563,7 @@ a:hover .m-categoryItem {
   border-bottom: 1px solid #dddce0;
 }
 .m-single__content tr:first-child td {
-  background-color: rgba(194, 95, 255, 0.3);
+  background-color: rgba(243, 85, 136, 0.3);
   border-right: 1px solid #f3f5fa;
 }
 .m-single__content h2 {
@@ -1748,7 +1800,7 @@ a:hover .m-categoryItem {
     height: 500px;
   }
   .m-biggerArticle.-viewLastest {
-    height: 250px;
+    height: 325px;
   }
   .m-biggerArticle.-viewLastest h3 {
     max-width: 600px;
@@ -1762,9 +1814,6 @@ a:hover .m-categoryItem {
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-biggerArticle.-viewLastest {
-    height: 250px;
-  }
   .m-biggerArticle.-viewLastest h3 {
     max-width: 750px;
   }
@@ -1798,7 +1847,7 @@ a:hover .m-categoryItem {
     padding-left: 60px;
   }
   .-viewLastest .m-biggerArticle__cat {
-    margin-top: 25px;
+    margin-top: 50px;
     padding: 0;
     padding-left: 60px;
   }
@@ -1995,11 +2044,11 @@ a:hover .m-categoryItem {
  --------------------------------------- */
 .o-upBar {
   padding: 10px;
-  background: #246BFD;
+  background: #438a5e;
   transition: background 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .o-upBar:hover {
-  background: #0657fd;
+  background: #397550;
 }
 
 .theBody footer.o-footer {
@@ -2047,7 +2096,7 @@ a:hover .m-categoryItem {
   right: 0;
   width: 2px;
   height: 21px;
-  background-color: #68b0ab;
+  background-color: #438a5e;
 }
 
 .m-footer__menu {

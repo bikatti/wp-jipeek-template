@@ -3,19 +3,16 @@
  -------------------------------------- */
 
 .m-lastArticle {
-    padding-top: $spaceMega;
     margin-bottom: $spaceSuperXl;
 
     .m-lastArticle__title {
-        font-size: $fontSuperXs;
+        font-size: $fontSm;
         margin-bottom: $spaceXs;
     }
 
     @include mediaQueriesMinMd {
-        padding-top: 0;
-
         .m-lastArticle__title {
-            font-size: $fontRg;
+            font-size: $fontMd;
         }
     }
 }
