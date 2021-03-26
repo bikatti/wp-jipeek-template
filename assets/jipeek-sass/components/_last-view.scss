@@ -3,7 +3,7 @@
  -------------------------------------- */
 
 .m-lastArticle {
-    margin-bottom: $spaceSuperXl;
+    margin-bottom: $spaceXs;
 
     .m-lastArticle__title {
         font-size: $fontSm;
@@ -11,6 +11,7 @@
     }
 
     @include mediaQueriesMinMd {
+        margin-bottom: $spaceSuperXl;
         .m-lastArticle__title {
             font-size: $fontMd;
         }

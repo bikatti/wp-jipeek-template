@@ -43,7 +43,7 @@
         h3 {
             @include lineClamp(2);
             max-height: 100px;
-            padding: $spaceRg;
+            padding: 0 $spaceRg;
         }
     }
 
@@ -66,7 +66,7 @@
         height: 500px;
 
         &.-viewLastest {
-            height: 325px;
+            height: 250px;
 
             h3 {
                 max-width: 600px;
@@ -113,6 +113,8 @@
 
     .-viewLastest & {
         padding-left: $spaceRg;
+        margin-top: $spaceMd;
+        margin-bottom: $spaceSm;
     }
 
 
@@ -121,7 +123,7 @@
         padding-left: $spaceSuperXl;
 
         .-viewLastest & {
-            margin-top: $spaceXl;
+            margin-top: $space25;
             padding: 0;
             padding-left: $spaceSuperXl;
         }
@@ -139,10 +141,6 @@
     padding-bottom: 0;
     @include lineClamp(3);
 
-    .-viewLastest & {
-        padding: $spaceRg;
-    }
-
     @include mediaQueriesMinMd {
         @include lineClamp(5);
         padding: 0;
@@ -152,7 +150,6 @@
         .-viewLastest & {
             @include lineClamp(3);
             max-width: 600px;
-            padding: 0;
             padding-left: $spaceSuperXl;
         }
     }

@@ -34,9 +34,10 @@
     letter-spacing: 0px;
     max-width: 890px;
     line-height: 1.14;
-    margin-bottom: $spaceBg;
+    margin-bottom: $spaceRg;
 
     @include mediaQueriesMinMd {
+        margin-bottom: $spaceMd;
         font-size: $fontBigger;
     }
 }
@@ -46,7 +47,7 @@
     font-size: $fontSuperXs;
     line-height: 1.46;
     max-width: 684px;
-    margin-bottom: $spaceSuperXl;
+    margin-bottom: $spaceBg;
 
     @include mediaQueriesMinMd {
         font-size: $fontXs;
@@ -75,9 +76,10 @@
     background-attachment: inherit;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: $spaceSuperXl;
+    margin-bottom: $spaceBg;
 
     @include mediaQueriesMinMd {
+        margin-bottom: $spaceSuperXl;
         height: 400px;
     }
 
@@ -245,7 +247,11 @@
 }
 
 .m-bottomArticle {
-    margin-bottom: $spaceMega;
+    margin-bottom: $spaceSuperXl;
+
+    @include mediaQueriesMinMd  {
+        margin-bottom: $spaceMega;
+    }
 }
 
 .m-page {
