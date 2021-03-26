@@ -16,6 +16,15 @@ $the_query = new WP_Query($argumentos);
 $iter = 0;
 ?>
 
+<div class="-container">
+    <?php 
+        get_template_part( 
+            'template-parts/front-page/view-lastest/header',
+            null, 
+            $args
+        );
+    ?>
+</div>
 
 <?php echo '<section class="m-bottomArticle '. $args['className'] .'">'; ?>
     <div class="-container">
