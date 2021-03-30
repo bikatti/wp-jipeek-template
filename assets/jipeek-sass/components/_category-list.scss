@@ -3,32 +3,38 @@
  -------------------------------------- */
 
 .m-categoryList {
-    margin-top: 140px;
-    margin-bottom: $spaceMd;
-    display: none;
-
+    margin-top: 100px;
+    margin-bottom: $spaceRg;
+    
     ul {
         display: flex;
         list-style: none;
         padding: 0px;
         margin: 0px;
-
+        
         li {
-            @include weight(5);
+            @include weight(6);
             display: inline-block;
             font-size: $fontP;
             margin-right: $spaceMd;
             letter-spacing: 0.9px;
             position: relative;
             margin-bottom: $spaceRg;
-
+            
             a:hover {
                 color: $color-primary;
             }
         }
     }
-
+    
     @include mediaQueriesMinMd {
-        display: block;
+        margin-top: 140px;
+        margin-bottom: $spaceMd;
+
+        ul {
+            li {
+                @include weight(5);
+            }
+        }
     }
 }

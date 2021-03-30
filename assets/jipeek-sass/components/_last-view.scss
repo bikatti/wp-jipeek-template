@@ -105,7 +105,7 @@
         @include weight(5);
         color: $color-lightin;
 
-        font-size: $fontSm;
+        font-size: $fontH3;
         line-height: 1.21;
         margin-bottom: $space25;
         position: relative;
@@ -147,15 +147,8 @@
 }
 
 .m-bigArticle__cat {
-    @include weight(6);
-    font-size: $fontSuperXxs;
-    @extend .-uppercase;
-    color: $color-lightin;
-    letter-spacing: 2.2px;
-    padding-bottom: 0;
+    @extend .-cat;
     margin-bottom: $spaceSm;
-    position: relative;
-    z-index: 2;
 }
 
 .m-smallArticle {
@@ -185,7 +178,7 @@
     }
 
     .m-smallArticle__excerpt {
-        @include lineClamp(5);
+        @include lineClamp(3);
         font-family: $font2;
         font-size: $fontP;
         text-transform: unset;
@@ -194,11 +187,9 @@
         letter-spacing: normal;
     }
 
-    p {
-        @include weight(6);
-        font-size: $fontSuperXxs;
-        @extend .-uppercase;
-        letter-spacing: 2.2px;
+    .m-smallArticle__cat {
+        @extend .-cat;
+        color: $color-black;
         margin-bottom: $space0;
     }
 
@@ -208,7 +199,7 @@
         line-height: 1.32;
 
         .m-bottomArticle & {
-            @include lineClamp(2);
+            @include lineClamp(4);
         }
     }
 

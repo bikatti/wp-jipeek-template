@@ -3,7 +3,6 @@
  -------------------------------------- */
 
 .m-single {
-    margin-top: 100px;
     margin-bottom: $spaceBg;
 
     p {
@@ -13,18 +12,11 @@
     .-col-12 {
         padding: 0 $spaceRg;
     }
-
-    @include mediaQueriesMinMd {
-        margin-top: 0;
-    }
 }
 
 .m-single__cat {
-    @include weight(6);
-    @extend .-uppercase;
-    font-size: $fontSuperXxs;
+    @extend .-cat;
     color: $color-primary;
-    letter-spacing: 2.2px;
     line-height: 1.38;
 }
 

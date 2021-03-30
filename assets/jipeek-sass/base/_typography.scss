@@ -136,3 +136,12 @@ li {
         background-color: $color-secondary;
     }
 }
+
+.-cat {
+    @include weight(5);
+    font-size: $fontSuperXxs;
+    @extend .-uppercase;
+    color: $color-lightin;
+    position: relative;
+    z-index: 2;
+}

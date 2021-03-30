@@ -3,7 +3,6 @@
  -------------------------------------- */
 
 .m-archive__header {
-    margin-top: $spaceMega;
     margin-bottom: $spaceBg;
     
     h1 {
@@ -41,8 +40,7 @@
         margin-bottom: $spaceSuperXl;
 
         h3 {
-            @include lineClamp(2);
-            max-height: 100px;
+            font-size: $fontH3;
             padding: 0 $spaceRg;
         }
     }
@@ -103,10 +101,7 @@
 }
 
 .m-biggerArticle__cat {
-    @extend .m-single__cat;
-    color: $color-lightin;
-    position: relative;
-    z-index: 2;
+    @extend .-cat;
     padding-left: $spaceSm;
     margin-bottom: $space0;
     margin-top: $spaceSuperXl;
@@ -139,7 +134,7 @@
     max-height: 122px;
     padding: $spaceSm;
     padding-bottom: 0;
-    @include lineClamp(3);
+    @include lineClamp(4);
 
     @include mediaQueriesMinMd {
         @include lineClamp(5);
