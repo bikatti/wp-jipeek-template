@@ -1,0 +1,13 @@
+/* -------------------------------------
+ # Aditional changes
+ --------------------------------------- */
+
+.m-page.-glosario {
+    @include mediaQueriesMd {
+        margin-top: 0;
+
+        .m-page__title {
+            margin-top: 0;
+        }
+    } 
+}

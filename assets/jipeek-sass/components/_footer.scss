@@ -13,8 +13,12 @@
 }
 
 .theBody footer.o-footer {
-    margin-top: $spaceMega;
+    margin-top: $spaceBg;
     margin-bottom: $spaceBg;
+
+    @include mediaQueriesMinMd {
+        margin-top: $spaceMega;
+    }
 }
 
 .m-footer__container {

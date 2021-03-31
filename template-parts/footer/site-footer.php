@@ -13,5 +13,5 @@
         <?php get_template_part( 'template-parts/footer/footer-nav' ); ?>
     </div>
     
-    <?php get_template_part( 'template-parts/footer/footer-firm' ); ?>
+    <?php get_template_part( 'template-parts/footer/footer-firm', null, $args); ?>
 </footer>

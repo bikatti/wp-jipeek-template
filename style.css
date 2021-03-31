@@ -1090,13 +1090,18 @@ a:hover {
   display: none;
 }
 .m-header__nav span, .m-header__nav a, .m-header__nav button {
-  margin-right: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #464547;
   font-size: 16px;
   display: flex;
   cursor: pointer;
+}
+.m-header__nav li {
+  margin-right: 40px;
+}
+.m-header__nav li:last-child {
+  margin-right: 0;
 }
 @media only screen and (min-width: 768px) {
   .m-header__nav {
@@ -1110,7 +1115,6 @@ a:hover {
   }
   .m-header__nav span, .m-header__nav a {
     display: inline-block;
-    margin-right: 40px;
   }
 }
 
@@ -1526,6 +1530,7 @@ a:hover {
   padding: 20px;
 }
 .m-categoryItem .m-categoryItem__cat {
+  margin-bottom: 10px;
   color: #464547;
 }
 .m-categoryItem .m-categoryItem__excerpt {
@@ -1575,13 +1580,18 @@ a:hover .m-categoryItem {
  # Single bloque
  -------------------------------------- */
 .m-single {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .m-single p {
   margin-bottom: 15px;
 }
 .m-single .-col-12 {
   padding: 0 20px;
+}
+@media only screen and (min-width: 576px) {
+  .m-single {
+    margin-bottom: 40px;
+  }
 }
 
 .m-single__cat {
@@ -2157,8 +2167,13 @@ a:hover .m-categoryItem {
 }
 
 .theBody footer.o-footer {
-  margin-top: 90px;
+  margin-top: 40px;
   margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .theBody footer.o-footer {
+    margin-top: 90px;
+  }
 }
 
 .m-footer__container {
@@ -2243,5 +2258,17 @@ a:hover .m-categoryItem {
   }
   .m-footer__firm::after {
     left: 43%;
+  }
+}
+
+/* -------------------------------------
+ # Aditional changes
+ --------------------------------------- */
+@media only screen and (max-width: 768px) {
+  .m-page.-glosario {
+    margin-top: 0;
+  }
+  .m-page.-glosario .m-page__title {
+    margin-top: 0;
   }
 }

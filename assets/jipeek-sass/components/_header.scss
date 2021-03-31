@@ -65,12 +65,19 @@
     }
 
     span, a, button {
-        margin-right: $spaceXs;
+        
         @include weight(5);
         color: $color-black;
         font-size: $fontP;
         display: flex;
         cursor: pointer;
+    }
+
+    li {
+        margin-right: $spaceBg;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     @include mediaQueriesMinMd {
@@ -86,7 +93,6 @@
 
         span, a {
             display: inline-block;
-            margin-right: $spaceBg;
         }
     }
 }

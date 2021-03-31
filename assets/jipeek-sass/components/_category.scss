@@ -50,6 +50,7 @@
 
     .m-categoryItem__cat {
         @extend .-cat;
+        margin-bottom: $spaceXs;
         color: $color-black;
     }
     

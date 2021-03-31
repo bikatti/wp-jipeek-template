@@ -3,7 +3,7 @@
  -------------------------------------- */
 
 .m-single {
-    margin-bottom: $spaceBg;
+    margin-bottom: $spaceRg;
 
     p {
         margin-bottom: $spaceSm;
@@ -11,6 +11,10 @@
 
     .-col-12 {
         padding: 0 $spaceRg;
+    }
+
+    @include mediaQueriesMinSm {
+        margin-bottom: $spaceBg;
     }
 }
 
