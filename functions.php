@@ -223,13 +223,15 @@ function change_post_type() {
     $labels->menu_name          = _x( $name, 'admin menu', 'your-plugin-textdomain' );
     $labels->name_admin_bar     = _x( $name, 'add new on admin bar', 'your-plugin-textdomain' );
     $labels->add_new            = _x( 'Añadir nuevo', $name, 'your-plugin-textdomain' );
-    $labels->add_new_item       = __( 'Añadir Nuev0 ' . $name, 'your-plugin-textdomain' );
+    $labels->add_new_item       = __( 'Añadir Nuevo ' . $name, 'your-plugin-textdomain' );
     $labels->new_item           = __( 'Nuevo ' . $name, 'your-plugin-textdomain' );
     $labels->edit_item          = __( 'Editar ' . $name, 'your-plugin-textdomain' );
     $labels->view_item          = __( 'Ver ' . $name, 'your-plugin-textdomain' );
+    // $labels->featured_image     = __( 'Imagen destacada de ' . $name, 'your-plugin-textdomain' );
     $labels->all_items          = __( 'Todos los ' . $name, 'your-plugin-textdomain' );
     $labels->search_items       = __( 'Buscar ' . $name, 'your-plugin-textdomain' );
     $labels->not_found          = _n( 'No se encontro el ' . $name, 'No hemos encontrado ningún ' . $name, 'numero-objeto', 'texto-dominio' );
     $labels->not_found_in_trash = _n( 'No se encontro el ' . $name . ' en Papelera', 'No hemos encontrado ningún ' . $name . ' en Papelera', 'numero-objeto', 'texto-dominio' );
+
 }
 add_action( 'init', 'change_post_type' );
