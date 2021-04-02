@@ -1683,8 +1683,14 @@ a:hover .m-categoryItem {
   border-bottom: 1px solid #dddce0;
 }
 .m-single__content tr:first-child td {
-  background-color: rgba(243, 85, 136, 0.3);
+  background-color: #f35588;
   border-right: 1px solid #f3f5fa;
+  color: #fefefe;
+}
+.m-single__content p, .m-single__content figcaption, .m-single__content table, .m-single__content h1, .m-single__content h2, .m-single__content h3, .m-single__content h4, .m-single__content h5, .m-single__content h6, .m-single__content pre, .m-single__content ul, .m-single__content ol {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .m-single__content h2 {
   margin-top: 40px;
@@ -1697,9 +1703,6 @@ a:hover .m-categoryItem {
   letter-spacing: normal;
   text-align: left;
   margin-bottom: 20px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .m-single__content figcaption {
   margin-top: -20px;
@@ -1724,7 +1727,6 @@ a:hover .m-categoryItem {
   margin-right: auto !important;
   margin-bottom: 20px;
   line-height: 1.3;
-  max-width: 900px;
 }
 .m-single__content h3 {
   font-size: 28px;
@@ -1743,15 +1745,19 @@ a:hover .m-categoryItem {
   color: #464547;
   font-size: 16px;
   padding-left: 20px;
-  max-width: 1000px;
   list-style: inherit;
-  margin: 25px 0px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 .m-single__content ul li, .m-single__content ol li {
-  list-style-type: disc;
   line-height: 1.75;
   margin-bottom: 10px;
+}
+.m-single__content ul li {
+  list-style-type: disc;
+}
+.m-single__content ol li {
+  list-style-type: decimal;
 }
 .m-single__content a {
   display: inline-flex;
@@ -1772,12 +1778,6 @@ a:hover .m-categoryItem {
   .m-single__content p, .m-single__content figcaption, .m-single__content ul, .m-single__content ol, .m-single__content table {
     font-size: 19px;
   }
-  .m-single__content ul, .m-single__content ol {
-    padding-left: 40px;
-  }
-  .m-single__content ul li, .m-single__content ol li {
-    padding-left: 20px;
-  }
   .m-single__content figcaption {
     text-align: center;
     margin-bottom: 20px;
@@ -1788,7 +1788,6 @@ a:hover .m-categoryItem {
 }
 @media only screen and (min-width: 992px) {
   .m-single__content ul, .m-single__content ol {
-    padding-left: 120px;
     margin-bottom: 0;
   }
 }

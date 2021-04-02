@@ -108,9 +108,17 @@
 
     tr:first-child {
         td {
-            background-color: rgba($color-secondary, $alpha: .3);
+            background-color: $color-secondary;
             border-right: 1px solid $color-lightgrey;
+            color: $color-lightin;
         }
+    }
+
+    p, figcaption, table, & h1, & h2,
+    & h3, & h4, & h5, & h6, pre, & ul, & ol {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     h2 {
@@ -125,9 +133,6 @@
         letter-spacing: normal;
         text-align: left;
         margin-bottom: $spaceRg;
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     figcaption {
@@ -155,7 +160,6 @@
         margin-right: auto !important;
         margin-bottom: $spaceRg;
         line-height: 1.3;
-        max-width: 900px;
     }
 
     & h3 {
@@ -179,18 +183,26 @@
         color: $color-black;
         font-size: $fontP;
         padding-left: $spaceRg;
-        max-width: 1000px;
+        
         
         list-style: inherit;
-        margin: $space25 0px;
+        margin-top: $space25;
         margin-bottom: $spaceXs;
         
 
         li {
-            list-style-type: disc;
+            // list-style-type: disc;
             line-height: 1.75;
             margin-bottom: $spaceXs;
         }
+    }
+
+    & ul li {
+        list-style-type: disc;
+    }
+
+    & ol li {
+        list-style-type: decimal;
     }
 
     a {
@@ -215,14 +227,6 @@
         p, figcaption, ul, ol, table {
             font-size: $fontSuperXs;
         }
-
-        ul, ol {
-            padding-left: $spaceBg;
-
-            li  {
-                padding-left: $spaceRg;
-            }
-        }
         
         figcaption {
             text-align: center;
@@ -236,7 +240,6 @@
 
     @include mediaQueriesMinLg {
         ul, ol {
-            padding-left: 120px;
             margin-bottom: 0;
         }
     }
