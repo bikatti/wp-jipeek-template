@@ -857,7 +857,7 @@ li {
   overflow: hidden;
 }
 
-.-toggleItem {
+.-toggleItem, .m-glosario__link {
   transition: 0.4s;
   display: inline-block;
   height: 33px;
@@ -868,7 +868,7 @@ li {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.-toggleItem:hover {
+.-toggleItem:hover, .m-glosario__link:hover {
   color: #fefefe;
   border-color: #f35588;
   background-color: #f35588;
@@ -1882,11 +1882,71 @@ a:hover .m-categoryItem {
 }
 .-glosario.m-page .m-single__content p, .-glosario.m-page .m-single__content figcaption, .-glosario.m-page .m-single__content ul, .-glosario.m-page .m-single__content ol, .-glosario.m-page .m-single__content table, .-glosario.m-page .m-single__content h1, .-glosario.m-page .m-single__content h2, .-glosario.m-page .m-single__content h3, .-glosario.m-page .m-single__content h4, .-glosario.m-page .m-single__content h5, .-glosario.m-page .m-single__content h6 {
   max-width: 100%;
+  scroll-margin-top: 90px;
 }
 @media only screen and (min-width: 768px) {
   .-glosario {
     padding: 0 100px;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .m-glosario__nav {
+    align-self: start;
+    position: sticky;
+    top: 100px;
+  }
+}
+
+.m-glosario__container {
+  position: fixed;
+  bottom: 0;
+  z-index: 50;
+}
+@media only screen and (max-width: 768px) {
+  .m-glosario__container {
+    padding: 5px 0;
+    background-color: #f35588;
+    border-radius: 100px;
+    display: block;
+    width: calc(100% - 40px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .m-glosario__container {
+    position: static;
+  }
+}
+
+.m-glosario__sub {
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+@media only screen and (max-width: 768px) {
+  .m-glosario__sub {
+    text-align: center;
+    color: #fefefe;
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+  }
+}
+
+.m-glosario__anchors {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .m-glosario__anchors {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+.m-glosario__link {
+  line-height: 1;
+  padding: 5px 15px;
+  margin-right: 12px;
 }
 
 /* ------------------------------------

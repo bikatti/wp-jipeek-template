@@ -32,9 +32,65 @@
     &.m-page .m-single__content h4, &.m-page .m-single__content h5,
     &.m-page .m-single__content h6 {
         max-width: 100%;
+        scroll-margin-top: 90px;
     }
 
     @include mediaQueriesMinMd {
         padding: 0 100px;
     }
+}
+
+.m-glosario__nav {
+    @include mediaQueriesMinMd {
+        align-self: start;
+        position: sticky;
+        top: 100px;
+    }
+}
+
+.m-glosario__container {
+    position: fixed;
+    bottom: 0;
+    z-index: $friend;
+
+    @include mediaQueriesMd {
+        padding: $space0 0;
+        background-color: $color-secondary;
+        border-radius: 100px;
+        display: block;
+        width: calc(100% - 40px);
+    }
+
+    @include mediaQueriesMinMd {
+        position: static;
+    }
+}
+
+.m-glosario__sub {
+    margin: $spaceXs 0;
+    text-transform: uppercase;
+    letter-spacing: .9px;
+
+    @include mediaQueriesMd {
+        text-align: center;
+        color: $color-lightin;
+        font-size: $fontSuperXs;
+        @include weight(6);
+    }
+}
+
+.m-glosario__anchors {
+    display: none;
+
+    @include mediaQueriesMinMd {
+        display: block;
+        margin-top: $spaceRg;
+    }
+}
+
+.m-glosario__link {
+    @extend .-toggleItem;
+    line-height: 1;
+    padding: $space0 $spaceSm;
+    margin-right: 12px;
 }
