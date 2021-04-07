@@ -53,18 +53,36 @@
     bottom: 20px;
     z-index: $friend;
 
+    .m-glosario__close {
+        @extend .m-modal__close;
+        display: none;
+    }
     
     @include mediaQueriesMd {
+        overflow: hidden;
         padding: $space0 0;
-        background-color: $color-secondary;
+        background-color: $color-grey;
+        box-shadow: 0 5px 8px rgba($color-darkgrey, $alpha: .5);
         border-radius: 100px;
         display: block;
         width: calc(100% - 40px);
         transition: all 0.4s;
 
         .-openNavGlossary & {
-            padding: $spaceSm $spaceRg $spaceXs;
+            padding: $spaceSm $spaceSm $spaceXs;
             border-radius: $spaceMd;
+        }
+
+        .-openNavGlossary & .m-glosario__close {
+            display: block;
+            top: auto;
+            bottom: 20px;
+
+            span {
+                font-size: 20px;
+                font-weight: 600;
+                border-bottom: 1px solid;
+            }
         }
     }
 
@@ -78,14 +96,32 @@
     text-transform: uppercase;
     letter-spacing: .9px;
 
+    &.-desktop {
+        display: none;
+    }
+
     @include mediaQueriesMd {
         text-align: center;
-        color: $color-lightin;
         font-size: $fontSuperXs;
+        position: static;
+        opacity: 1;
         @include weight(6);
+        transform: all .4s;
 
         .-openNavGlossary & {
+            position: absolute;
+            left: -100vw;
+            opacity: 0;
+        }
+    }
+
+    @include mediaQueriesMinMd {
+        &.-mobile {
             display: none;
+        }
+
+        &.-desktop {
+            display: block;
         }
     }
 }
@@ -112,17 +148,9 @@
     .-openNavGlossary & {
         padding-top: 6px;
         padding-bottom: 6px;
-        border-color: $color-lightin;
-        background: $color-lightin;
-        color: $color-secondary;
+        padding: $space0 14px;
         font-weight: 600;
-        transition: all 0.4s;
-
-        &:hover {
-            color: $color-secondary;
-            border-color: $color-secondary;
-            background: darken($color-lightin, $amount: 4%);
-        }
+        height: auto;
     }
 }
 
