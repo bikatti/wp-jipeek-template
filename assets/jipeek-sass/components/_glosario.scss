@@ -50,7 +50,7 @@
 
 .m-glosario__container {
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     z-index: $friend;
 
     @include mediaQueriesMd {
@@ -94,3 +94,14 @@
     padding: $space0 $spaceSm;
     margin-right: 12px;
 }
+
+/* ------------ Bloque de glosario ------------ */
+.wp-block-gutenberg-glosasrio-block {
+    @include mediaQueriesSm {
+        .theBody & {
+            padding: $spaceRg $spaceSm;
+        }
+    }
+}
+
+// 172.22.88.215

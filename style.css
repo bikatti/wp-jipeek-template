@@ -1900,7 +1900,7 @@ a:hover .m-categoryItem {
 
 .m-glosario__container {
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   z-index: 50;
 }
 @media only screen and (max-width: 768px) {
@@ -1947,6 +1947,13 @@ a:hover .m-categoryItem {
   line-height: 1;
   padding: 5px 15px;
   margin-right: 12px;
+}
+
+/* ------------ Bloque de glosario ------------ */
+@media only screen and (max-width: 576px) {
+  .theBody .wp-block-gutenberg-glosasrio-block {
+    padding: 20px 15px;
+  }
 }
 
 /* ------------------------------------
