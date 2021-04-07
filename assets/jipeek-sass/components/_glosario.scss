@@ -53,12 +53,19 @@
     bottom: 20px;
     z-index: $friend;
 
+    
     @include mediaQueriesMd {
         padding: $space0 0;
         background-color: $color-secondary;
         border-radius: 100px;
         display: block;
         width: calc(100% - 40px);
+        transition: all 0.4s;
+
+        .-openNavGlossary & {
+            padding: $spaceSm $spaceRg $spaceXs;
+            border-radius: $spaceMd;
+        }
     }
 
     @include mediaQueriesMinMd {
@@ -76,11 +83,19 @@
         color: $color-lightin;
         font-size: $fontSuperXs;
         @include weight(6);
+
+        .-openNavGlossary & {
+            display: none;
+        }
     }
 }
 
 .m-glosario__anchors {
     display: none;
+
+    .-openNavGlossary & {
+        display: block;
+    }
 
     @include mediaQueriesMinMd {
         display: block;
@@ -93,6 +108,22 @@
     line-height: 1;
     padding: $space0 $spaceSm;
     margin-right: 12px;
+
+    .-openNavGlossary & {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-color: $color-lightin;
+        background: $color-lightin;
+        color: $color-secondary;
+        font-weight: 600;
+        transition: all 0.4s;
+
+        &:hover {
+            color: $color-secondary;
+            border-color: $color-secondary;
+            background: darken($color-lightin, $amount: 4%);
+        }
+    }
 }
 
 /* ------------ Bloque de glosario ------------ */
@@ -100,6 +131,7 @@
     @include mediaQueriesSm {
         .theBody & {
             padding: $spaceRg $spaceSm;
+            padding-left: $spaceRg;
         }
     }
 }

@@ -1910,6 +1910,11 @@ a:hover .m-categoryItem {
     border-radius: 100px;
     display: block;
     width: calc(100% - 40px);
+    transition: all 0.4s;
+  }
+  .-openNavGlossary .m-glosario__container {
+    padding: 15px 20px 10px;
+    border-radius: 30px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1931,10 +1936,16 @@ a:hover .m-categoryItem {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
   }
+  .-openNavGlossary .m-glosario__sub {
+    display: none;
+  }
 }
 
 .m-glosario__anchors {
   display: none;
+}
+.-openNavGlossary .m-glosario__anchors {
+  display: block;
 }
 @media only screen and (min-width: 768px) {
   .m-glosario__anchors {
@@ -1948,11 +1959,26 @@ a:hover .m-categoryItem {
   padding: 5px 15px;
   margin-right: 12px;
 }
+.-openNavGlossary .m-glosario__link {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-color: #fefefe;
+  background: #fefefe;
+  color: #f35588;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+.-openNavGlossary .m-glosario__link:hover {
+  color: #f35588;
+  border-color: #f35588;
+  background: #f4f4f4;
+}
 
 /* ------------ Bloque de glosario ------------ */
 @media only screen and (max-width: 576px) {
   .theBody .wp-block-gutenberg-glosasrio-block {
     padding: 20px 15px;
+    padding-left: 20px;
   }
 }
 
