@@ -7,8 +7,8 @@
         display: grid;
         grid-auto-flow: row;
         grid-auto-columns: minmax(200px, auto);
-        grid-column-gap: 50px;
-        grid-template-columns: minmax(200px, auto) repeat(auto-fit, minmax(600px, auto));
+        grid-column-gap: $space25;
+        grid-template-columns: minmax(100px, auto) repeat(auto-fit, minmax(600px, auto));
         grid-template-rows: auto auto;
     }
 }
@@ -66,7 +66,6 @@
         border-radius: 100px;
         display: block;
         width: calc(100% - 40px);
-        transition: all 0.4s;
 
         .-openNavGlossary & {
             padding: $spaceSm $spaceSm $spaceXs;
@@ -144,13 +143,13 @@
     line-height: 1;
     padding: $space0 $spaceSm;
     margin-right: 12px;
+    height: auto;
 
     .-openNavGlossary & {
         padding-top: 6px;
         padding-bottom: 6px;
         padding: $space0 14px;
         font-weight: 600;
-        height: auto;
     }
 }
 

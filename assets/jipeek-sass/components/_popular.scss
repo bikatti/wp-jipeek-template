@@ -11,6 +11,10 @@
 
     margin-bottom: $spaceMd;
     // min-height: 400px;
+
+    a:hover & {
+        box-shadow: 0 12px 14px rgba($color-black, .1);
+    }
     
     h3 {
         @include weight(5);
@@ -39,6 +43,6 @@
 
 .m-popularItem__cat {
     @extend .-cat;
-    margin-bottom: $spaceSm;
+    margin-bottom: $spaceXs;
     color: $color-black;
 }

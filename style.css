@@ -1453,6 +1453,9 @@ a:hover {
   border-radius: 7px;
   margin-bottom: 30px;
 }
+a:hover .m-popularItem {
+  box-shadow: 0 12px 14px rgba(70, 69, 71, 0.1);
+}
 .m-popularItem h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -1479,7 +1482,7 @@ a:hover {
 }
 
 .m-popularItem__cat {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #464547;
 }
 
@@ -2280,8 +2283,8 @@ a:hover .m-categoryItem {
     display: grid;
     grid-auto-flow: row;
     grid-auto-columns: minmax(200px, auto);
-    grid-column-gap: 50px;
-    grid-template-columns: minmax(200px, auto) repeat(auto-fit, minmax(600px, auto));
+    grid-column-gap: 25px;
+    grid-template-columns: minmax(100px, auto) repeat(auto-fit, minmax(600px, auto));
     grid-template-rows: auto auto;
   }
 }
@@ -2332,7 +2335,6 @@ a:hover .m-categoryItem {
     border-radius: 100px;
     display: block;
     width: calc(100% - 40px);
-    transition: all 0.4s;
   }
   .-openNavGlossary .m-glosario__container {
     padding: 15px 15px 10px;
@@ -2405,13 +2407,13 @@ a:hover .m-categoryItem {
   line-height: 1;
   padding: 5px 15px;
   margin-right: 12px;
+  height: auto;
 }
 .-openNavGlossary .m-glosario__link {
   padding-top: 6px;
   padding-bottom: 6px;
   padding: 5px 14px;
   font-weight: 600;
-  height: auto;
 }
 
 /* ------------ Bloque de glosario ------------ */
