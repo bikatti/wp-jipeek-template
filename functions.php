@@ -36,7 +36,7 @@ add_filter( 'pre_get_posts', 'noSticky' );
  * Styles CSS, Fonts and others things
  */
 function assets() {
-    $ver = '1.3.49';
+    $ver = '1.4.1';
     wp_register_style( 'rubik', 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap', '', $ver , 'all' );
     wp_register_style( 'Frank Ruhl Libre', 'https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap', '', $ver, 'all' );
 
@@ -111,11 +111,11 @@ add_filter( 'login_headerurl', 'login_logo_url' );
 function text_copyright() {
     register_sidebar(
         array(
-            'name' => 'Texto de copyright',
-            'id' => 'text_copyright',
-            'description' => 'Texto del copyright',
-            'before_title' => '',
-            'after_title' => '',
+            'name'          => 'Texto de copyright',
+            'id'            => 'text_copyright',
+            'description'   => 'Texto del copyright',
+            'before_title'  => '',
+            'after_title'   => '',
             'before_widget' => '',
             'after_widget'  => '',
         )
@@ -137,7 +137,7 @@ function pagination_anterior_siguiente() {
             </div>
         </div>
 <?php }
- wp_reset_postdata();
+    wp_reset_postdata();
 }
 
 function n_posts_link_attributes() {

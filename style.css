@@ -857,7 +857,7 @@ li {
   overflow: hidden;
 }
 
-.-toggleItem, .m-glosario__link {
+.-toggleItem {
   transition: 0.4s;
   display: inline-block;
   height: 33px;
@@ -868,7 +868,7 @@ li {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.-toggleItem:hover, .m-glosario__link:hover {
+.-toggleItem:hover {
   color: #fefefe;
   border-color: #f35588;
   background-color: #f35588;
@@ -1690,7 +1690,8 @@ a:hover .m-categoryItem {
   border-right: 1px solid #f3f5fa;
   color: #fefefe;
 }
-.m-single__content p, .m-single__content figcaption, .m-single__content table, .m-single__content h1, .m-single__content h2, .m-single__content h3, .m-single__content h4, .m-single__content h5, .m-single__content h6, .m-single__content pre, .m-single__content ul, .m-single__content ol {
+.m-single__content p, .m-single__content figcaption, .m-single__content table, .m-single__content h1, .m-single__content h2, .m-single__content h3, .m-single__content h4, .m-single__content h5, .m-single__content h6, .m-single__content pre, .m-single__content ul, .m-single__content ol,
+.m-single__content .wp-block-embed {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -1702,10 +1703,10 @@ a:hover .m-categoryItem {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #464547;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.55;
   letter-spacing: normal;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .m-single__content figcaption {
   margin-top: -20px;
@@ -1750,10 +1751,10 @@ a:hover .m-categoryItem {
   padding-left: 20px;
   list-style: inherit;
   margin-top: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 .m-single__content ul li, .m-single__content ol li {
-  line-height: 1.75;
+  line-height: 1.55;
   margin-bottom: 10px;
 }
 .m-single__content ul li {
@@ -1777,21 +1778,30 @@ a:hover .m-categoryItem {
   height: auto;
   margin: 30px auto 30px auto;
 }
+.m-single__content iframe {
+  width: 100%;
+  margin: 25px 0 25px 0;
+  height: 300px;
+}
 @media only screen and (min-width: 768px) {
   .m-single__content p, .m-single__content figcaption, .m-single__content ul, .m-single__content ol, .m-single__content table {
     font-size: 19px;
+  }
+  .m-single__content p, .m-single__content figcaption, .m-single__content table {
+    line-height: 1.75;
   }
   .m-single__content figcaption {
     text-align: center;
     margin-bottom: 20px;
   }
+  .m-single__content ul li, .m-single__content ol li {
+    line-height: 1.75;
+  }
+  .m-single__content iframe {
+    height: 500px;
+  }
   .m-single__content img {
     margin: 50px auto 10px auto;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .m-single__content ul, .m-single__content ol {
-    margin-bottom: 0;
   }
 }
 
@@ -2064,7 +2074,7 @@ a:hover .m-categoryItem {
   outline: 0;
 }
 
-.m-modal__close, .m-glosario__container .m-glosario__close {
+.m-modal__close {
   border: none;
   background: none;
   position: absolute;
@@ -2072,10 +2082,10 @@ a:hover .m-categoryItem {
   right: 20px;
   z-index: 1;
 }
-#burgerMenu .m-modal__close, #burgerMenu .m-glosario__container .m-glosario__close, .m-glosario__container #burgerMenu .m-glosario__close {
+#burgerMenu .m-modal__close {
   right: 10px;
 }
-.m-modal__close span, .m-glosario__container .m-glosario__close span {
+.m-modal__close span {
   font-size: 40px;
 }
 
@@ -2272,154 +2282,5 @@ a:hover .m-categoryItem {
   }
   .m-page.-glosario .m-page__title {
     margin-top: 0;
-  }
-}
-
-/* ------------------------------------
- # Wordpress content Glosario page
- -------------------------------------- */
-@media only screen and (min-width: 768px) {
-  .m-glosario {
-    display: grid;
-    grid-auto-flow: row;
-    grid-auto-columns: minmax(200px, auto);
-    grid-column-gap: 25px;
-    grid-template-columns: minmax(100px, auto) repeat(auto-fit, minmax(600px, auto));
-    grid-template-rows: auto auto;
-  }
-}
-
-.-glosario {
-  position: relative;
-  width: 100%;
-  max-width: 1360px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 20px;
-}
-.-glosario.m-page {
-  margin-top: 0;
-}
-.-glosario.m-page .m-single__content p, .-glosario.m-page .m-single__content figcaption, .-glosario.m-page .m-single__content ul, .-glosario.m-page .m-single__content ol, .-glosario.m-page .m-single__content table, .-glosario.m-page .m-single__content h1, .-glosario.m-page .m-single__content h2, .-glosario.m-page .m-single__content h3, .-glosario.m-page .m-single__content h4, .-glosario.m-page .m-single__content h5, .-glosario.m-page .m-single__content h6 {
-  max-width: 100%;
-  scroll-margin-top: 90px;
-}
-@media only screen and (min-width: 768px) {
-  .-glosario {
-    padding: 0 100px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .m-glosario__nav {
-    align-self: start;
-    position: sticky;
-    top: 100px;
-  }
-}
-
-.m-glosario__container {
-  position: fixed;
-  bottom: 20px;
-  z-index: 50;
-}
-.m-glosario__container .m-glosario__close {
-  display: none;
-}
-@media only screen and (max-width: 768px) {
-  .m-glosario__container {
-    overflow: hidden;
-    padding: 5px 0;
-    background-color: #dddce0;
-    box-shadow: 0 5px 8px rgba(126, 124, 131, 0.5);
-    border-radius: 100px;
-    display: block;
-    width: calc(100% - 40px);
-  }
-  .-openNavGlossary .m-glosario__container {
-    padding: 15px 15px 10px;
-    border-radius: 30px;
-  }
-  .-openNavGlossary .m-glosario__container .m-glosario__close {
-    display: block;
-    top: auto;
-    bottom: 20px;
-  }
-  .-openNavGlossary .m-glosario__container .m-glosario__close span {
-    font-size: 20px;
-    font-weight: 600;
-    border-bottom: 1px solid;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .m-glosario__container {
-    position: static;
-  }
-}
-
-.m-glosario__sub {
-  margin: 10px 0;
-  text-transform: uppercase;
-  letter-spacing: 0.9px;
-}
-.m-glosario__sub.-desktop {
-  display: none;
-}
-@media only screen and (max-width: 768px) {
-  .m-glosario__sub {
-    text-align: center;
-    font-size: 19px;
-    position: static;
-    opacity: 1;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    transform: all 0.4s;
-  }
-  .-openNavGlossary .m-glosario__sub {
-    position: absolute;
-    left: -100vw;
-    opacity: 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .m-glosario__sub.-mobile {
-    display: none;
-  }
-  .m-glosario__sub.-desktop {
-    display: block;
-  }
-}
-
-.m-glosario__anchors {
-  display: none;
-}
-.-openNavGlossary .m-glosario__anchors {
-  display: block;
-}
-@media only screen and (min-width: 768px) {
-  .m-glosario__anchors {
-    display: block;
-    margin-top: 20px;
-  }
-}
-
-.m-glosario__link {
-  line-height: 1;
-  padding: 5px 15px;
-  margin-right: 12px;
-  height: auto;
-}
-.-openNavGlossary .m-glosario__link {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding: 5px 14px;
-  font-weight: 600;
-}
-
-/* ------------ Bloque de glosario ------------ */
-@media only screen and (max-width: 576px) {
-  .theBody .wp-block-gutenberg-glosasrio-block {
-    padding: 20px 15px;
-    padding-left: 20px;
   }
 }

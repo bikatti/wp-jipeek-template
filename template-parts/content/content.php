@@ -20,7 +20,9 @@
                     <div class="m-single__content"><?php the_content( ); ?></div>
                 <?php
             } else {
-                echo '<div class="m-single__content">' . get_the_content( ) . '</div>';
+                ?>
+                    <div class="m-single__content"><?php the_content( ); ?></div>
+                <?php
             }
         ?>
     </div>

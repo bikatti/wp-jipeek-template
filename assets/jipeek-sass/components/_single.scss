@@ -115,7 +115,8 @@
     }
 
     p, figcaption, table, & h1, & h2,
-    & h3, & h4, & h5, & h6, pre, & ul, & ol {
+    & h3, & h4, & h5, & h6, pre, & ul, & ol,
+    .wp-block-embed {
         max-width: 900px;
         margin-left: auto;
         margin-right: auto;
@@ -129,10 +130,10 @@
         font-family: $font2;
         color: $color-black;
         font-size: $fontP;
-        line-height: 1.75;
+        line-height: 1.55;
         letter-spacing: normal;
         text-align: left;
-        margin-bottom: $spaceRg;
+        margin-bottom: $space25;
     }
 
     figcaption {
@@ -186,13 +187,11 @@
         
         
         list-style: inherit;
-        margin-top: $space25;
-        margin-bottom: $spaceXs;
-        
+        margin-top: $space25;  
+        margin-bottom: $space25;      
 
         li {
-            // list-style-type: disc;
-            line-height: 1.75;
+            line-height: 1.55;
             margin-bottom: $spaceXs;
         }
     }
@@ -223,9 +222,19 @@
         }
     }
 
+    iframe {
+        width: 100%;
+        margin: $space25 0 $space25 0;
+        height: 300px;
+    }
+
     @include mediaQueriesMinMd {
         p, figcaption, ul, ol, table {
             font-size: $fontSuperXs;
+        }
+
+        p, figcaption, table {
+            line-height: 1.75;
         }
         
         figcaption {
@@ -233,14 +242,18 @@
             margin-bottom: $spaceRg;
         }
 
+        & ul, & ol {
+            li {
+                line-height: 1.75;
+            }
+        }
+
+        iframe {
+            height: 500px;
+        }
+
         img {
             margin: $spaceXl auto $spaceXs auto;
-        }
-    }
-
-    @include mediaQueriesMinLg {
-        ul, ol {
-            margin-bottom: 0;
         }
     }
 }
