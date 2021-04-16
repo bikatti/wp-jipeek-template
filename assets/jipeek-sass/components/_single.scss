@@ -155,11 +155,12 @@
     }
 
     & h1, & h2, & h3, & h4, & h5, & h6 {
-        @include weight(5);
+        @include weight(4);
         font-size: $fontSm;
         margin-left: auto !important;
         margin-right: auto !important;
-        margin-bottom: $spaceRg;
+        margin-top: $spaceBg;
+        margin-bottom: $spaceXs;
         line-height: 1.3;
     }
 
@@ -184,11 +185,9 @@
         color: $color-black;
         font-size: $fontP;
         padding-left: $spaceRg;
-        
-        
         list-style: inherit;
         margin-top: $space25;  
-        margin-bottom: $space25;      
+        margin-bottom: $space25;
 
         li {
             line-height: 1.55;
@@ -204,12 +203,19 @@
         list-style-type: decimal;
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        & + ul, & + ol {
+            margin-top: -#{$spaceSm};
+        }
+    }
+
     a {
         display: inline-flex;
         overflow: hidden;
         position: relative;
         font-weight: bold;
         text-decoration: underline;
+        color: $color-secondary;
     }
 
     .wp-block-image {
@@ -234,7 +240,7 @@
         }
 
         p, figcaption, table {
-            line-height: 1.75;
+            line-height: 1.70;
         }
         
         figcaption {
@@ -244,7 +250,7 @@
 
         & ul, & ol {
             li {
-                line-height: 1.75;
+                line-height: 1.70;
             }
         }
 

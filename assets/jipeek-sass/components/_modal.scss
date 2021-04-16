@@ -119,8 +119,8 @@
 .m-modal__burger ul {
     li {
         border-bottom: $borderBottom;
-        padding-top: $spaceXxs;
-        padding-bottom: $spaceXxs;
+        padding-top: $spaceSm;
+        padding-bottom: $spaceSm;
 
         a {
             @include weight(5);
