@@ -1911,6 +1911,7 @@ a:hover .m-categoryItem {
 .m-biggerArticle.-viewLastest h3 {
   font-size: 28px;
   padding: 0 20px;
+  line-height: 1.21;
 }
 .m-biggerArticle h3 {
   font-family: "Roboto", sans-serif;
