@@ -135,7 +135,7 @@
     max-height: 122px;
     padding: $spaceSm;
     padding-bottom: 0;
-    @include lineClamp(4);
+    @include lineClamp(3);
 
     @include mediaQueriesMinMd {
         @include lineClamp(5);
@@ -144,7 +144,6 @@
         max-width: 492px;
 
         .-viewLastest & {
-            @include lineClamp(3);
             max-width: 600px;
             padding-left: $spaceSuperXl;
         }

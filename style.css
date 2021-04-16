@@ -2001,7 +2001,7 @@ a:hover .m-categoryItem {
   padding-bottom: 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
@@ -2015,10 +2015,6 @@ a:hover .m-categoryItem {
     max-width: 492px;
   }
   .-viewLastest .m-biggerArticle__excerpt {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
     max-width: 600px;
     padding-left: 60px;
   }
