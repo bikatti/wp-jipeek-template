@@ -61,7 +61,7 @@
     h3 {
         @include lineClamp(4);
         font-size: $fontXs;
-        margin-bottom: $spaceSm;
+        margin-bottom: $spaceXs;
     }
 
     a:hover & {

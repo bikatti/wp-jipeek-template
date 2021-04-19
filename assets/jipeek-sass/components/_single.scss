@@ -205,7 +205,7 @@
 
     h1, h2, h3, h4, h5, h6 {
         & + ul, & + ol {
-            margin-top: -#{$spaceSm};
+            margin-top: -#{$space0};
         }
     }
 
@@ -250,7 +250,7 @@
 
         & ul, & ol {
             li {
-                line-height: 1.70;
+                line-height: 1.5;
             }
         }
 

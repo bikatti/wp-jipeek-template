@@ -119,23 +119,16 @@
         @include weight(3);
 
         font-size: $fontP;
-        line-height: 1.44;
         color: $color-lightin;
         position: relative;
         z-index: 2;
 
-        @include lineClamp(4);
+        @include lineClamp(3);
         max-height: 117px;
     }
 
     @include mediaQueriesXs {
         padding-right: $spaceSm;
-    }
-    
-    @include mediaQueriesXxs {
-        .m-bigArticle__excerpt {
-            @include lineClamp(2);
-        }
     }
 
     @include mediaQueriesMinMd {
@@ -196,7 +189,6 @@
     h3 {
         font-size: $fontSuperXs;
         margin-bottom: $spaceRg;
-        line-height: 1.32;
 
         .m-bottomArticle & {
             @include lineClamp(4);
