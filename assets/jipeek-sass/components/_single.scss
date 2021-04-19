@@ -159,8 +159,8 @@
         font-size: $fontSm;
         margin-left: auto !important;
         margin-right: auto !important;
-        margin-top: $spaceBg;
-        margin-bottom: $spaceXs;
+        margin-top: $spaceMd;
+        margin-bottom: $space0;
         line-height: 1.3;
     }
 
@@ -183,7 +183,8 @@
     & ul, & ol {
         font-family: $font2;
         color: $color-black;
-        font-size: $fontP;
+        // font-size: $fontP;
+        font-size: $fontSuperXs;
         padding-left: $spaceRg;
         list-style: inherit;
         margin-top: $space25;  
@@ -201,12 +202,6 @@
 
     & ol li {
         list-style-type: decimal;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        & + ul, & + ol {
-            margin-top: -#{$space0};
-        }
     }
 
     a {
