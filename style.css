@@ -881,7 +881,7 @@ li {
   color: #fefefe;
   position: relative;
   z-index: 2;
-  letter-spacing: 1.9px;
+  letter-spacing: 1.5px;
 }
 
 a {
@@ -1742,7 +1742,7 @@ a:hover .m-categoryItem {
   font-size: 19px;
   padding-left: 20px;
   list-style: inherit;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 25px;
 }
 .m-single__content ul li, .m-single__content ol li {
