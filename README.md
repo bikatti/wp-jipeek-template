@@ -1,4 +1,3 @@
-Template para Blogs pequeños empresariales o temas específicos. 
 <h1 align="center">
 Jipeek Blog - Wordpress template
 </h1>
