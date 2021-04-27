@@ -72,3 +72,10 @@ function stickyMenu() {
     header.classList.remove("-headerFixed")
   }
 }
+
+console.log(`
+  💚 Desarrollado por Bikatti
+  ✨ Puedes ver más de mí en https://bikatti.com
+  🙌 También puedes ir a https://github.com/bikatti
+  
+`)
