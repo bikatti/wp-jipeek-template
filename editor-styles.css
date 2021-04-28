@@ -93,6 +93,25 @@
     margin: 25px 0 25px 0;
 }
 
+tr td {
+    padding-left: 10px;
+    border-right: 1px solid #dddce0 !important;
+    border-left: 1px solid #dddce0 !important;
+    border-bottom: 1px solid #dddce0 !important;
+}
+
+tr:first-child td {
+    background-color: var(--color-secondary);
+    border-right: 1px solid #f3f5fa !important;
+    color: #fefefe !important;
+}
+
+.wp-block-quote {
+    padding-left: 25px !important;
+    border-left: 2px solid #59585a !important;
+}
+
+
 /* -------------------------------------
  # Media Queries
  --------------------------------------- */
@@ -105,5 +124,9 @@
     .wp-block-image figcaption {
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 14px !important;
     }
 }
