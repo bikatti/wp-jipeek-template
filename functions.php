@@ -43,7 +43,7 @@ add_filter( 'pre_get_posts', 'noSticky' );
  * Styles CSS, Fonts and others things
  */
 function assets() {
-    $ver = '1.4.13';
+    $ver = '1.4.14';
     wp_register_style( 'index', get_template_directory_uri( ).'/style.css', '', $ver, 'all' );
 
     wp_enqueue_style( 'style', get_stylesheet_uri(  ) , array( 'rubik', 'Frank Ruhl Libre', 'index'), $ver, 'all' );
